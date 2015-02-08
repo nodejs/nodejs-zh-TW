@@ -16,6 +16,7 @@
 按字母排序
 
 * [appleboy](https://github.com/appleboy)
-* [clonn](https://github.com/appleboy)
-* [dca](https://github.com/appleboy)
-* [poying](https://github.com/appleboy)
+* [cfsghost](https://github.com/cfsghost)
+* [clonn](https://github.com/clonn)
+* [dca](https://github.com/dca)
+* [poying](https://github.com/poying)
