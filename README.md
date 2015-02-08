@@ -4,8 +4,8 @@
 
 ## 工作項目
 
-* 翻譯官方網站
-* 翻譯 [io.js Weekly](https://medium.com/@iojs)
+* 翻譯[官方網站](https://github.com/iojs/iojs-tw/issues/9)
+* 翻譯[io.js Weekly](https://github.com/iojs/iojs-tw/issues/8)
 
 ## 工作流程
 
