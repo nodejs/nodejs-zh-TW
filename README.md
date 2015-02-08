@@ -9,7 +9,20 @@
 
 ## 工作流程
 
-請直接上 [Issue](https://github.com/iojs/iojs-tw/issues) 填上自己的坑
+工作流程採用 [github flow 流程](https://guides.github.com/introduction/flow/index.html)
+
+ 1. 發現任何問題需要進行討論，直接到 [issue](https://github.com/iojs/iojs-tw/issues/new) 發起討論，並對應到一個 label
+ 2. 如果發現資料有需要進行更新，歡迎直接發 [pull request](https://github.com/iojs/iojs-tw/pulls) ，並在 assignee 指定一個觀察者
+ 3. 當項目完成討論，合併後將會進行項目的 `close`
+
+## 志工招募
+
+有志者直接上 [Issue](https://github.com/iojs/iojs-tw/issues/2) 留言後進行入坑申請。目前人力需求。
+ 
+ * 翻譯（英文翻譯中文，或者簡體中文翻譯成繁體中文 XD)
+ * 社群媒體發佈人員
+ * 網站製作人員
+ * 設計專長人員
 
 ## 目前成員
 
