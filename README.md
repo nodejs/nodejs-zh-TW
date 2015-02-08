@@ -19,4 +19,5 @@
 * [cfsghost](https://github.com/cfsghost)
 * [clonn](https://github.com/clonn)
 * [dca](https://github.com/dca)
+* [jessy1092](https://github.com/jessy1092)
 * [poying](https://github.com/poying)
