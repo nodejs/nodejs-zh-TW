@@ -47,6 +47,8 @@
 
 這是為了讓排版顯示的自動斷詞斷句可以正確運作，以及增加中英文混雜段落的閱讀舒適。
 
+更多詳細排版規則請參考[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
+
 #### 標點符號範例
 
 Node.js 是一種適合用於 Server-side 的開發框架（Framework），相當 Nice！
