@@ -35,13 +35,7 @@
  * 網站製作人員
  * 設計專長人員
 
-## 目前成員
+## 貢獻者
 
-按字母排序
+請參照 [Contributors Link](https://github.com/iojs/iojs-tw/graphs/contributors)
 
-* [appleboy](https://github.com/appleboy)
-* [cfsghost](https://github.com/cfsghost)
-* [clonn](https://github.com/clonn)
-* [dca](https://github.com/dca)
-* [jessy1092](https://github.com/jessy1092)
-* [poying](https://github.com/poying)
