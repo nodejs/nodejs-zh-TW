@@ -39,3 +39,7 @@
 
 請參照 [Contributors Link](https://github.com/iojs/iojs-tw/graphs/contributors)
 
+## 授權
+
+* 程式碼採取 [MIT License](https://github.com/iojs/iojs-tw/blob/master/LICENSE.txt)
+* 翻譯採取 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW) [@iojs-tw](https://github.com/iojs/iojs-tw)
