@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iojs/iojs-tw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-[台灣官方網站](http://iojs.github.io/iojs-tw/)
+[台灣官方網站](http://iojs.nodejs.tw/)
 
 ## 工作項目
 
