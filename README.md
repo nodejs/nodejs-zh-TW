@@ -29,7 +29,7 @@
 ## 志工招募
 
 有志者直接上 [Issue](https://github.com/iojs/iojs-tw/issues/2) 留言後進行入坑申請。目前人力需求。
- 
+
  * 翻譯（英文翻譯中文，或者簡體中文翻譯成繁體中文 XD)
  * 社群媒體[發佈人員](https://github.com/iojs/iojs-tw/issues/5)
  * 網站製作人員
@@ -37,14 +37,18 @@
 
 ## 社群媒體
 
-可以關注下列社群帳號，取得 iojs-tw 的最新消息
+歡迎關注下列社群帳號，以獲得 iojs-tw 的最新資訊
 
-- Twitter [@iojs-tw](https://twitter.com/iojs_tw): 目前由 [clonn](https://github.com/clonn)、[dca](https://github.com/dca)、[jessy1092](https://github.com/jessy1092) 共同管理
+- Twitter [@iojs-tw](https://twitter.com/iojs_tw): 目前由下列社群成員協助管理 (名稱排序)
+  - [clonn](https://github.com/clonn)
+  - [dca](https://github.com/dca)
+  - [jessy1092](https://github.com/jessy1092)
 
-既有的 node.js 社群帳號
+目前既有的 Node.js 社群帳號
+
 - Twitter [@NodejsTaiwan](https://twitter.com/NodejsTaiwan)
 - [Node.js Taiwan 粉絲頁](https://www.facebook.com/NodeJS.tw)
-- [Node.js Taiwan 社團](https://www.facebook.com/groups/node.js.tw/?ref=bookmarks)
+- [Node.js Taiwan 社團](https://www.facebook.com/groups/node.js.tw)
 - [Node.js Taiwan Youtube](https://www.youtube.com/user/nodejsTaiwan)
 - [Node.js Taiwan google plus](https://plus.google.com/106619802476745918068)
 
