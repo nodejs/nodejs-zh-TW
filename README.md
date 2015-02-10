@@ -23,7 +23,7 @@
 工作流程採用 [GitHub Flow](https://guides.github.com/introduction/flow/index.html)，且需遵守 [書籍寫作規範](./guideline/convention.md)
 
  1. 發現任何問題需要進行討論，直接到 [Issue](https://github.com/iojs/iojs-tw/issues/new) 發起討論，並對應到一個 label
- 2. 如果發現資料有需要進行更新，歡迎直接發 [Pull request](https://github.com/iojs/iojs-tw/pulls) ，並在指定一個觀察者
+ 2. 如果發現資料有需要進行更新，歡迎直接發 [Pull Request](https://github.com/iojs/iojs-tw/pulls) ，並在指定一個 Reviewer
  3. 當項目完成討論，合併後將會進行項目的 `close`
 
 ## 志工招募
