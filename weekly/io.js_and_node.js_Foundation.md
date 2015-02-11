@@ -8,7 +8,7 @@
 在短短數個月之中，io.js 已經成長到擁有 23 位活躍核心成員、數個工作小組、27 種語言在地化團隊。在優秀的社群支持之下，能夠快速地提供高品質的軟體。我們之所以能夠做到這樣，都是因為我們採取開放式管理的架構，為社群重新注入活力並吸引更多的貢獻者加入這個專案，更甚於 node.js 過往。
 
 <!-- The only thing that could make io.js better is putting to rest the questions hanging over the future of our split with node.js. We are eager to put this all behind us but we can’t sacrifice the progress we’ve made or the principals and open governance that got us here. -->
-唯一能讓 io.js 更好的就是停止那些關於我們與 node.js 分開之後的疑問。我們很希望把這一切拋在腦後，但是我們也無法輕易犧牲好不容易達到的成果，以及那些讓我們達到現今成果的理念及開放式管理。
+唯一能讓 io.js 更好的就是停止質疑我們與 node.js 分開之後的未來。我們很希望把這一切拋在腦後，但是我們也無法輕易犧牲好不容易達到的成果，以及那些讓我們達到現今成果的理念及開放式管理。
 
 <!-- Talks with Joyent are ongoing. Once the foundation has a technical governance model you will see an issue on io.js’ GitHub about whether io.js should join which will be discussed and voted on openly in a public TC meeting following the governance rules we’ve already built. -->
 與 Joyent 的對話還在進行中，一旦 node.js 基金會有了雛形，你們將會在 io.js 的 Github 中看到 io.js 是否應該加入的 issue，將會在公開的 TC 會議中討論並投票，一切都遵照我們已經建立起的管理方式。
