@@ -39,10 +39,10 @@
 
 歡迎關注下列社群帳號，以獲得 iojs-tw 的最新資訊
 
-- Twitter [@iojs-tw](https://twitter.com/iojs_tw): 目前由下列社群成員協助管理 (名稱排序)
-  - [clonn](https://github.com/clonn)
-  - [dca](https://github.com/dca)
-  - [jessy1092](https://github.com/jessy1092)
+Twitter [@iojs-tw](https://twitter.com/iojs_tw): 目前由下列社群成員協助管理 (名稱排序)
+ - [clonn](https://github.com/clonn)
+ - [dca](https://github.com/dca)
+ - [jessy1092](https://github.com/jessy1092)
 
 目前既有的 Node.js 社群帳號
 
