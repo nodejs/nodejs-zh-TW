@@ -87,3 +87,4 @@ exclude_generator:
 deploy:
   type: github
   repo: https://github.com/iojs/iojs-tw.git
+  branch: gh-pages
