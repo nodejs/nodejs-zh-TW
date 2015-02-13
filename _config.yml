@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: io.js
+title: io.js Taiwan
 subtitle:
 description:
-author: John Doe
+author: io.js Taiwan
 language: zh-TW
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://iojs.nodejs.tw
+url: http://tw.iojs.org
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
