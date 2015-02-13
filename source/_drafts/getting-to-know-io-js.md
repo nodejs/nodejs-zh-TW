@@ -4,7 +4,11 @@ tags:
 
 # Getting to know io.js
 
+# 初探 io.js
+
 Last week, Twitter was abuzz about an initial release of [io.js](http://iojs.org). io.js is an npm compatible platform originally based on Node.js and is a fork of Joyent's [Node.js](http://nodejs.org/).
+
+就在上個星期，開始在 Twitter 上面釋出 [io.js](http://iojs.org) 相關訊息，io.js 是一個以 Joyent 手中的 [Node.js](http://nodejs.org/) 為基礎，並且與 npm 相容的 fork 出來的專案。
 
 ## Why fork Node.js?
 
