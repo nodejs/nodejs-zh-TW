@@ -2,41 +2,41 @@ title: "Getting to know io.js"
 tags:
 ---
 
-# Getting to know io.js
-
 # 初探 io.js
-
-Last week, Twitter was abuzz about an initial release of [io.js](http://iojs.org). io.js is an npm compatible platform originally based on Node.js and is a fork of Joyent's [Node.js](http://nodejs.org/).
 
 就在上個星期，開始在 Twitter 上面釋出 [io.js](http://iojs.org) 相關訊息，io.js 是一個以 Joyent 手中的 [Node.js](http://nodejs.org/) 為基礎，並且與 npm 相容的 fork 出來的專案。
 
-## Why fork Node.js?
+#為何要 fork Node.js？
 
-The io.js team is made up mostly of the [key contributors](https://github.com/iojs/io.js/blob/v1.x/README.md#current-project-team-members) to Node.js. In August, the team created [Node Forward](http://nodeforward.org/) which was an attempt by the community to help improve Node.js. 
+io.js 團隊大部分的成員來自於原本 [Node.js 核心團隊](https://github.com/iojs/io.js/blob/v1.x/README.md#current-project-team-members)。在八月時候成立了一個 [Node Forward] 目標就是嘗試讓社群協助 Node.js 的成長。
 
-> A broad community effort to improve Node, JavaScript, and their ecosystem through open collaboration.
+> 透過社群合作力量來影響 Node, JavaScript 以及他的 ecosystem 
 
-Here we get a hint at why the community felt compelled to fork nodejs at this point:
+而以下才是 Node.js 被社群 fork 出來的前情提要的首要指標，
 
-> Some problems require broader ownership and contributorship than have traditionally been applied, while others are so dispersed between tiny projects that they require new collaborative space to grow. Node Forward is a place where the collaboration necessary to solve these issues can take place.
+> 有些問題的決定權只在某些人手上，並沒有被分散下去，但是這些人力是分散在不同的小專案，所以人力是無法滿足這些小專案的快速發展。這些都需要更多貢獻者來達到目標。 Node Forward 就是一個這樣組織，希望讓更多貢獻者可以解決以上問題。
 
-Ultimately, the work of the community could not be released under the trademark restrictions of Node, so a fork was made and io.js was born.
+最後社群的協助還是不能解決 Node 商業考量目的。基於以上種種理由 io.js 就如此誕生了。
 
-[Isaac Schlueter](https://twitter.com/izs) a core contributor, [provides a lot of the backstory behind the decision to fork on his personal blog](http://blog.izs.me/post/104685388058/io-js). One key takeaway, it is the intention of io.js that the two projects will hopefully merge together sometime in the future. 
+[Isaac Schlueter] (Node.js 核心貢獻者之一)，提供了很多[背後故事]((http://blog.izs.me/post/104685388058/io-js))說明為何要 fork Node.js 的原因。
 
-## What's new in io.js?
+其中一個主要的理由，希望藉由這兩個不同專案 (io.js, Node.js) 未來終究有合併的一天。
 
-First, io.js introduces proper [semantic versioning (semver)](http://semver.org/) by tagging the release 1.0.0 because it's such a divergence from Node.js. jQuery blogged about the importance of using semver in a [recent blog post](http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/):
+## io.js 新特徵
 
-> One of those best practices is semantic versioning, or semver for short. In a practical sense, semver gives developers (and build tools) an idea of the risk involved in moving to a new version of software. Version numbers are in the form of MAJOR.MINOR.PATCH with each of the three components being an integer. In semver, if the MAJOR number changes it indicates there are breaking changes in the API and thus developers need to beware.
+首先 io.js 採用正確的[版本語意 (sermver)](http://semver.org/) ，從 1.0.0 開始，這就是最大跟 Node.js 的不同。
 
-## Latest V8 engine
+[jQuery blog](http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/) 對於這個部分發表了為什麼版本語意的重要性。
 
-io.js updated the V8 JavaScript engine up to 3.31.74.1 which is most notable for running ES6 features of the JavaScript spec without using the `--harmony` flag to enable them.
+> 版本語意在版本控管上是一件很重要的事情。在通則上，semver 賦予開發者或者開發工具一個很好的方向，讓大家知道版本更新的指標方法。可以從版本號碼知道目前是 MAJOR, MINOR, PATCH 是有格式軌跡可循，讓大家可以方便參考。在 semver 中，如果 MAJOR 號碼改變，開發者就知道這個版本有可能 API 會改變。
 
-### Available ES6 features
+## V8 engine 更換
 
-The features listed below are available with io.js without specifying any flag:
+io.js 更新了 V8 JavaScript engine ，更新到 3.31.74.1 。最明顯的特徵就是可以完整支援 ES6 特性，並且不需要再加上 `--harmony` 這個指標。
+
+### 相容 ES6 特性
+
+在 io.js 可以很順暢的執行 ES6 特性，特性如以下列表，
 
 * [Block scoping (`let`, `const`)](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-let-and-const-declarations)
 * Collections ([`Map`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-map-objects), [`WeakMap`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-constructor-properties-of-the-global-object-weakmap), [`Set`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-set-objects), [`WeakSet`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-constructor-properties-of-the-global-object-weakset))
@@ -47,18 +47,23 @@ The features listed below are available with io.js without specifying any flag:
 * [Symbols](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-ecmascript-language-types-symbol-type)
 * [Template strings](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-static-semantics-templatestrings)
 
-### New modules
+### 新模組
 
-io.js comes with new experimental core modules:
+io.js 增加幾個嘗試性的核心模組，
 
 * [smalloc](https://iojs.org/api/smalloc.html): allows you to do external rawmemory allocation/deallocation/copying in JavaScript
 * [v8](https://iojs.org/api/v8.html): exposes events and interfaces specificto the version of V8 build with node
 
-You can review the full list of changes in the [io.js changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
+你可以在 [io.js changelog](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上看到這些完整列表。
+
 
 ## Running io.js
 
+## 開始使用 io.js
+
 Running a JavaScript node application with io.js is the same as running it with node; the only exception is that the name has changed. 
+
+開始使用 io.js 在 Node.js 應用裡面，使用方法跟使用 Node.js 一樣，唯一差異就是執行名稱不一樣了 (XDDDDD)
 
 Node.js
 
@@ -72,25 +77,27 @@ io.js
 
 [Node version manager (nvm)](https://github.com/creationix/nvm), which is a bash script that allows you to manage multiple versions of Node.js and now supports installing various versions of io.js. If you have nvm installed you can run the following command in your terminal to list the versions of io.js available:
 
+[Node version manager (nvm)](https://github.com/creationix/nvm), 就是一個幫助管理不同 Node.js 版本的工具，現在已經可以支援 io.js ，你可以透過以下的指令，找到 io.js 目前可安裝版本，接著進行安裝 io.js ，
+
   $ nvm ls-remote v1
     iojs-v1.0.0
     iojs-v1.0.1
     iojs-v1.0.2
     iojs-v1.0.3
 
-Then in your project folder you can install io.js by specifying the latest version listed.
+然後在你的專案中，安裝個別不同的 io.js 版本。
 
   $ nvm install iojs-v1.0.3
 
-**Note:** At the time of this writing, I'd recommend only installing io.js via nvm. Many early adopters who've installed io.js through the installer on io.js homepage are saying that io.js inserts itself over node by replacing a symlink that links to node to now link to io.js. nvm allows you set a specific version for specific project folders.
+**Note:** 在本文編寫的時期，本人建議透過 nvm 安裝 io.js。許多早期安裝 io.js 的使用者透過 io.js 的安裝方式還是會影響到 Node.js 原本正常運作。 nvm 可以讓你在不同版本之間運作順暢。
 
-## Trying it out
+## 立刻體驗
 
-Want to test io.js out in an Atlassian Connect add-on?  You can quickly get a HipChat add-on to run on io.js and utilize an ES6 feature like Generators by following these simple steps:
+想要開始嘗試 io.js 的 Atlassian Connect add-on? 你可以快速取得 HipChat add-on 進行運作 io.js 以及相關 ES6 特徵像是 Generators 這些，可以透過以下步驟執行，
 
-1.  Go to the [HipChat Add-ons Quick Start guide](https://www.hipchat.com/docs/apiv2/quick_start?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs)and follow the instructions to get a add-on up and running with the[atlassianlabs/ac-koa-hipchat](https://bitbucket.org/atlassianlabs/ac-koa-hipchat?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs)framework
+1.  到[HipChat Add-ons Quick Start guide](https://www.hipchat.com/docs/apiv2/quick_start?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs) 根據畫面指示並且取得  add-on ，執行[atlassianlabs/ac-koa-hipchat](https://bitbucket.org/atlassianlabs/ac-koa-hipchat?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs) framework
 
-2.  `vagrant ssh` into the vagrant server you set up in step 1. At the commandprompt you'll need to install nvm by running this command:
+2.  `vagrant ssh` 設定 vagrant server , 透過指令進行安裝 nvm
 
 
   curl https://raw.githubusercontent.com/creationix/nvm/v0.23.0/install.sh | bash
@@ -98,25 +105,33 @@ Want to test io.js out in an Atlassian Connect add-on?  You can quickly get a Hi
 
 This will install nvm and update your shell. You'll next need to type `exit`at the command prompt to close your ssh session and restart the shell.
 
-3.  Open `package.json` and edit the web script line so it uses io.js insteadof Node.js:
+將著將會安裝 nvm ，安裝結束後需要輸入 `exit` 關閉掉終端機.
+
+3.  開啟 `package.json` 並進行修改
 
   "scripts": {
    "web": "iojs web.js",
    "web-dev": "nodemon --harmony -e js,json,css,hbs web.js"
   },
 
-4.  Again run `vagrant ssh` to restart the servers shell and run the followingcommand to start the application:
+4.  再次執行 `vagrant ssh` 重新開啟服務，並且重新啟動 Node.js 伺服器
 
   $ cd project && npm start web
 
-This will start the Koa HipChat add-on server and you can register your add-onwith a HipChat room using the following URL:
+將會啟動 Koa HipChat add-on 伺服器，你可以透過註冊你的 add-on 在 HipChat room 裡面設定，透過以下網址，
 
   `https://xxxxxxxx.ngrok.com/addon/capabilities`
 
-  where `xxxxxxxx.ngrok.com` is the url specified in the shell after the  server starts up.
-
 If you are able to type `/hello` in the chat field and have the HipChat add-on reply back with "Hi" then congratulations! You are now running an io.js application that utilizes ES6 features such as Generators.
 
-## Should you use io.js?
+如果你輸入  `/hello` ，HipChat add-on 將會回應你一個 "HI" ，恭喜，目前已經成功透過 io.js 以及 ES6 相關的使用。
 
-The all important question you might be asking yourself, can I use io.js in my node add-ons today? Right now io.js is a little more than a week old and the latest version at the time of this writing, v1.0.3, is still listed as "Unstable" on the site. Services like nvm are still working the bugs out. Hosting companies haven't announced support for it. Right now if you're an early adopter and want to see a "Stable" io.js test your add-ons with io.js and file any [issues you find](https://github.com/iojs/io.js/issues). Ultimately, it's too early to switch to io.js but keep an eye on it and maybe it'll become the most popular JavaScript server platform to use.
+## 建議何時開始使用 io.js
+
+這應該是最多人會問到的問題，現在就可以開始使用 io.js 了嗎？
+
+就是現在，io.js 在本文編寫時期大約為 v1.0.3 ，還是屬於 `Unstable` 階段。像是 nvm 還是會有一些小問題。還沒有太多公司宣布他們開始支援 io.js 。如果你是一個早期使用者，並且開始嘗試一些自己的 add-ons ，並且將發現的 issue 工佈到 io.js issue 列表。 最後現在可能還是有點早切換到 io.js ，但是持續關注它也許接下來 io.js 會成為 JavaScript 伺服器平台流行趨勢。
+
+##補充
+
+目前 io.js 已經進入 v1.2.0 版本，並且已經宣告穩定，目前也有許多廠商宣告支援 io.js ，所以可以安心服用，如有任何問題，歡迎到 [io.js 官方 issue](https://github.com/iojs/io.js/issues) 進行討論或者 bug 回報
