@@ -95,8 +95,6 @@ io.js
 
 想要開始嘗試 io.js 的 Atlassian Connect add-on? 你可以快速取得 HipChat add-on 進行運作 io.js 以及相關 ES6 特徵像是 Generators 這些，可以透過以下步驟執行，
 
-(感覺以下可以開始忽略 ...)
-
 1.  到[HipChat Add-ons Quick Start guide](https://www.hipchat.com/docs/apiv2/quick_start?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs) 根據畫面指示並且取得  add-on ，執行[atlassianlabs/ac-koa-hipchat](https://bitbucket.org/atlassianlabs/ac-koa-hipchat?utm_source=dac&amp;utm_medium=blog&amp;utm_campaign=getting-to-know-iojs) framework
 
 2.  `vagrant ssh` 設定 vagrant server , 透過指令進行安裝 nvm
