@@ -62,21 +62,27 @@ io.js 增加幾個實驗性的核心模組
 
 Node.js
 
-  $ node app.js
+```
+$ node app.js
+```
 
 io.js
 
-  $ iojs app.js
+```
+$ iojs app.js
+```
 
 ### Node 版本管理
 
 [Node version manager (nvm)](https://github.com/creationix/nvm), 就是一個幫助管理不同 Node.js 版本的工具，現在已經可以支援 io.js ，你可以透過以下的指令，找到 io.js 目前可安裝版本，接著進行安裝 io.js
 
-  $ nvm ls-remote v1
-    iojs-v1.0.0
-    iojs-v1.0.1
-    iojs-v1.0.2
-    iojs-v1.0.3
+```
+$ nvm ls-remote v1
+  iojs-v1.0.0
+  iojs-v1.0.1
+  iojs-v1.0.2
+  iojs-v1.0.3
+```
 
 然後在你的專案中，安裝各別不同的 io.js 版本。
 
@@ -92,24 +98,32 @@ io.js
 
 2. `vagrant ssh` 設定 vagrant server , 透過指令進行安裝 nvm
 
-  curl https://raw.githubusercontent.com/creationix/nvm/v0.23.0/install.sh | bash
+```
+$ curl https://raw.githubusercontent.com/creationix/nvm/v0.23.0/install.sh | bash
+```
 
 將著將會安裝 nvm ，安裝結束後需要輸入 `exit` 關閉掉終端機.
 
 3.  開啟 `package.json` 並進行修改
 
+```
   "scripts": {
    "web": "iojs web.js",
    "web-dev": "nodemon --harmony -e js,json,css,hbs web.js"
   },
+```
 
 4.  再次執行 `vagrant ssh` 重新開啟服務，並且重新啟動 Node.js 伺服器
 
-  $ cd project && npm start web
+```
+$ cd project && npm start web
+```
 
 將會啟動 Koa HipChat add-on 伺服器，你可以透過註冊你的 add-on 在 HipChat room 裡面設定，透過以下網址，
 
-  `https://xxxxxxxx.ngrok.com/addon/capabilities`
+```
+https://xxxxxxxx.ngrok.com/addon/capabilities
+```
 
 如果你輸入 `/hello`，HipChat add-on 將會回應你一個 "HI" ，恭喜，目前已經成功透過 io.js 以及 ES6 相關的使用。
 
