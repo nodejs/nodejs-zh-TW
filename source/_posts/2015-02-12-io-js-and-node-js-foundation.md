@@ -1,5 +1,5 @@
 title: io.js and a node.js 基金會
-date: 2015/02/12 20:46:25
+date: 2015-02-12 20:46:25
 ---
 
 ## io.js and a node.js 基金會
