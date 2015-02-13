@@ -6,13 +6,14 @@
     "version": "3.0.0-rc.3"
   },
   "dependencies": {
+    "hexo-deployer-git": "0.0.3",
     "hexo-generator-archive": "*",
     "hexo-generator-category": "*",
     "hexo-generator-index": "*",
     "hexo-generator-tag": "*",
     "hexo-renderer-ejs": "*",
-    "hexo-renderer-stylus": "^0.2.0",
     "hexo-renderer-marked": "^0.2.4",
+    "hexo-renderer-stylus": "^0.2.0",
     "hexo-server": "^0.1.2"
   }
 }
