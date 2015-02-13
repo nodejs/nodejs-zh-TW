@@ -3,7 +3,6 @@ date: 2015-02-13 21:24:18
 tags:
 ---
 
-
 就在上個星期，開始在 Twitter 上面釋出 [io.js](http://iojs.org) 相關訊息，io.js 是一個以 Joyent 手中的 [Node.js](http://nodejs.org/) 為基礎，並且與 npm 相容的 fork 出來的專案。
 
 # 為何要 fork Node.js？
