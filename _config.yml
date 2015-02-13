@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: io.js
 subtitle:
 description:
 author: John Doe
 email:
-language:
+language: zh-TW
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://iojs.nodejs.tw
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -26,7 +26,7 @@ source_dir: source
 public_dir: public
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
