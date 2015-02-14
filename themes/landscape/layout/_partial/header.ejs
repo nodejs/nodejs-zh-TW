@@ -17,6 +17,7 @@
         <% for (var i in theme.menu){ %>
           <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
         <% } %>
+        <a class="main-nav-link" href="/about-us/index.html">關於我們</a>
       </nav>
       <nav id="sub-nav">
         <% if (theme.rss){ %>
