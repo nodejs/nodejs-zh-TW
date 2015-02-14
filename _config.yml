@@ -68,5 +68,5 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/iojs/iojs-tw.git
+  repo: git@github.com:iojs/iojs-tw.git
   branch: gh-pages
