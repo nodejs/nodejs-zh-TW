@@ -1,6 +1,6 @@
 # iojs-tw
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iojs/iojs-tw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/iojs/iojs-tw.svg?branch=master)](https://travis-ci.org/iojs/iojs-tw) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iojs/iojs-tw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 [台灣官方網站](http://tw.iojs.org/)
 
