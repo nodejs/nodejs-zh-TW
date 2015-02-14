@@ -21,6 +21,8 @@ io.js 團隊大部分的成員來自於原本 [Node.js 核心團隊](https://git
 
 其中一個主要的理由，希望藉由這兩個不同專案 (io.js, Node.js) 未來終究有合併的一天。
 
+<!-- more -->
+
 ## io.js 新特徵
 
 首先 io.js 採用正確的[版本語意 (sermver)](http://semver.org/) ，從 1.0.0 開始，這就是最大跟 Node.js 的不同。
