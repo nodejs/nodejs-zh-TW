@@ -6,7 +6,7 @@
 
 ## 協作方法
 
- 1. 歡迎想要協助翻譯、推廣或各類貢獻的人，以任何形式進行貢獻，若遭遇問題，可隨時發起一則議題（issue）進行討論。
+ 1. 歡迎想要協助翻譯、推廣或各類貢獻的人，以任何形式進行貢獻，若遇到任何問題，可隨時發起一則議題（issue）進行討論。
  2. 如果想要直接加入翻譯團隊，請至 [入坑申請](https://github.com/iojs/iojs-tw/issues/2) 回應，並於文內做簡短自我介紹。
  3. 有任何工作項目待執行（如發起某一份文件的翻譯），請直接到 [Issue](https://github.com/iojs/iojs-tw/issues/new) 發出一則議題。
  4. 發現任何問題需要進行討論，直接到 [Issue](https://github.com/iojs/iojs-tw/issues/new) 發起討論，並對應到一個 label
