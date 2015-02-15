@@ -1,4 +1,4 @@
-title: io.js 和 a node.js 基金會
+title: io.js 和 node.js 基金會
 date: 2015-02-12 20:46:25
 tags:
 categories: iojs 好文
