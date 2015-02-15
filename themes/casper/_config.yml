@@ -1,0 +1,10 @@
+# config
+cover: http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png
+logo: //blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png
+bio: 'iojs 台灣繁體中文翻譯小組'
+
+# Content
+excerpt_link: 繼續閱讀
+
+# Miscellaneous
+rss: atom.xml

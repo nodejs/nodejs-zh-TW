@@ -1,0 +1,10 @@
+
+<footer class="site-footer">
+  <% if (config.rss || config.feed) {  %>
+  <a class="subscribe icon-feed" href="<%= (config.rss || config.feed.path) %>"><span class="tooltip">Subscribe!</span></a>
+  <% } %>
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="<%- config.root %>"><%- config.title %></a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>

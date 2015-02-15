@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: iojs 台灣官方部落格
+title: iojs 台灣
 subtitle:
 description:
 author: iojs 台灣
@@ -62,7 +62,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: casper
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -70,3 +70,10 @@ deploy:
   type: git
   repo: git@github.com:iojs/iojs-tw.git
   branch: gh-pages
+
+feed:
+  type: atom
+  path: /atom.xml
+  limit: 20
+
+disqus_shortname: iojs-tw
