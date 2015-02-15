@@ -7,13 +7,11 @@
       <h1 class="post-title"><a href="<%- config.root %><%- post.path %>"><%- post.title %></a></h1>
     </header>
     <section class="post-excerpt">
-      <p>
       <% if (post.excerpt){ %>
         <%- post.excerpt %>
       <% } else { %>
         <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220) %>
       <% } %>
-      </p>
       <% if (theme.excerpt_link) { %>
       <p>
           <a href="<%- config.root %><%- post.path %>" class="excerpt-link"><%= theme.excerpt_link %>...</a>
