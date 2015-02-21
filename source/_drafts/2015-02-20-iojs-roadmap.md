@@ -60,7 +60,7 @@ Any API addition will cause an increase in the *minor* version.
 雖然對於 io.js 來說這無疑是向前邁進了一大步，但是我們將努力使這步伐不會影響到現有生態系統的相容性。
 
 <!-- NG will use ES6 modules and will be implementing a new platform and standard library available only to modules using this native new style. Modules written prior to NG using the old CommonJS module syntax will continue to operate against the old API. This is what will allow us to make improvements to the platform without breaking compatibility and still letting future NG based applications benefit from all the modules built today. -->
-NS 將會使用 ES6 中的模組功能，並且將會實作一個新的平台以標準函式庫，只相容於那些使用新規範的模組。在 NS 之前的那些使用 CommonJS 語法的模組將會相容於舊 API。這樣我們將可以在不影響相容性的情形之下對平台進行改良，而且又能夠讓未來相容於 NS 規範的應用程式能夠使用現存的模組。
+NG 將會使用 ES6 中的模組功能，並且將會實作一個新的平台以標準函式庫，只相容於那些使用新規範的模組。在 NG 之前的那些使用 CommonJS 語法的模組將會相容於舊 API。這樣我們將可以在不影響相容性的情形之下對平台進行改良，而且又能夠讓未來相容於 NG 規範的應用程式能夠使用現存的模組。
 
 <!-- # Immediate Priorities -->
 # 燃眉之急
