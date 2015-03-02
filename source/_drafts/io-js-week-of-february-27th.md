@@ -4,7 +4,7 @@ categories: iojs 週報
 ---
 
 _Note: version **1.4.0** was tagged and built but not released. A libuv bug was discovered in the process so the release was aborted. We have jumped to 1.4.1 to avoid confusion._
-_注意：版本 **1.4.0** 已經編譯完成並標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會升版號到 1.4.1 以避免造成混淆。_
+_注意：版本 **1.4.0** 已經編譯完成並加上標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會提升版本號到 1.4.1 以避免造成混淆。_
 
 ## 主要更動
 
@@ -30,11 +30,11 @@ The build team is in the process of being given access to the Linaro ARMv8 Serve
 
 # 社群更新
 
-* [**和解提案**](https://github.com/iojs/io.js/issues/978)：io.js 著手開始進行對於 Node.js 基金會的和解草案。目前還是初期草案階段，因此來自社群的意見是非常重要的，請大家踴躍反饋。
+* [**和解提案**](https://github.com/iojs/io.js/issues/978)：io.js 著手開始進行對於 Node.js 基金會的和解草案。目前還是初期草案階段，因此來自社群的意見是非常重要的，請大家踴躍反應。
 * **New internal C++ Streams API**：一個全新的 [C++ Streams API] 在這週增加到 io.js 之中，允許你可以將 TLS stream 包裝成另一個 TLS stream。
 * **io.js 路徑圖**：[路徑圖](https://github.com/iojs/io.js/blob/v1.x/ROADMAP.md) 是對 io.js 未來的規劃。它描述關於穩定性策略的規劃以及列出 io.js 的當務之急。
 * **路徑圖的投影片已經完成等待翻譯**：一系列之於 io.js 路徑圖的投影片已經[完成可以進行翻譯](https://github.com/iojs/roadmap/issues/18)。你覺得你可以向周遭的群體做簡報嗎？留下你的意見，我們會與你協作幫你預備好簡報！
-* **Microsoft io.js How-To for Azure Websites**: 微軟 發佈一篇關於他們 Azure 平台的[入門教程](http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/)，描述如何在 Azure 上使用 io.js。
+* **Microsoft io.js How-To for Azure Websites**: 微軟 發佈一篇關於他們 Azure 平台的[入門教學](http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/)，描述如何在 Azure 上使用 io.js。
 * **Floobits moves to io.js**: 配對編程軟體 Floobits [將他們的平台轉移到 io.js](https://news.floobits.com/2015/02/23/on-moving-to-io.js/)，因為對於 Node 過於緩慢的釋出感到挫折，對於可以開始使用 ES6 的新功能而又不需要增加 `--harmony` 的參數，他們也覺得從 0.10.0 到 0.12.0 的改動並不是非常明顯。
 * **Anand Mani Sankar's _Node.js vs io.js: Why the fork?!?_**: Anand 寫了一篇很不錯也相當客觀的 [io.js 近期歷史的文章](http://anandmanisankar.com/posts/nodejs-iojs-why-the-fork/#.VO82hE60PVw.twitter)，也提及我們希望藉由 io.js 實現什麼。可以幫助哪些沒有參與到社群之中的人可以瞭解目前的狀況。
 * **iojs-jp - New io.js Japanese Blog**: iojs-jp 社群建立了[本地化的部落格](http://blog.iojs.jp/)，用當地的語言來傳遞  io.js 的消息。如果你感興趣，快去看看吧！
