@@ -3,30 +3,29 @@ tags:
 categories: iojs 週報
 ---
 
-_Note: version **1.4.0** was tagged and built but not released. A libuv bug was discovered in the process so the release was aborted. We have jumped to 1.4.1 to avoid confusion._
 _注意：版本 **1.4.0** 已經編譯完成並加上標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會提升版本號到 1.4.1 以避免造成混淆。_
 
 ## 主要更動
 
-* **process** / **promises**: An`'unhandledRejection'` event is now emitted on `process` whenever a `Promise` is rejected and no error handler is attached to the `Promise` within a turn of the event loop. A `'rejectionHandled'` event is now emitted whenever a `Promise` was rejected and an error handler was attached to it later than after an event loop turn.  [#758](https://github.com/iojs/io.js/pull/758) (Petka Antonov)
-* **streams**: you can now use regular streams as an underlying socket for `tls.connect()` [#926](https://github.com/iojs/io.js/pull/926) (Fedor Indutny)
-* **http**: A new `'abort'` event emitted when a `http.ClientRequest` is aborted by the client. [#945](https://github.com/iojs/io.js/pull/945) (Evan Lucas)
-* **V8**: Upgrade V8 to 4.1.0.21. Includes an embargoed fix, details should be available when embargo is lifted. A breaking ABI change has been held back from this upgrade, possibly to be included when io.js merges V8 4.2. See [#952](https://github.com/iojs/io.js/pull/952) for discussion.
-* **npm**: Upgrade npm to 2.6.0. Includes features to support the new registry and to prepare for `npm@3`. See [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v260-2015-02-12) for details. Summary:
-  * [#5068](https://github.com/npm/npm/issues/5068) Add new logout command, and make it do something useful on both bearer-based and basic-based authed clients.
-  * [#6565](https://github.com/npm/npm/issues/6565) Warn that `peerDependency` behavior is changing and add a note to the docs.
-  * [#7171](https://github.com/npm/npm/issues/7171) Warn that `engineStrict` in `package.json` will be going away in the next major version of npm (coming soon!)
-* **libuv**: Upgrade to 1.4.2. See [libuv ChangeLog](https://github.com/libuv/libuv/blob/v1.x/ChangeLog) for details of fixes.
+* **process** / **promises**：每當有 `Promise` 被回絕而且沒有在 `Promise` 上附加錯誤處理程式，現在 `process` 會在該輪的事件迴圈內發出一個 `'unhandledRejection'` 事件。而每當 `Promise` 被回絕而且它有附加錯誤處理程式時，現在它會在下一輪事件迴圈發出一個 `'rejectionHandled'` 事件。  [#758](https://github.com/iojs/io.js/pull/758) (Petka Antonov)
+* **streams**：你現在可以使用正規的 stream 作為 `tls.connect()` 的底層 socket [#926](https://github.com/iojs/io.js/pull/926) (Fedor Indutny)
+* **http**：當 `http.ClientRequest` 被客戶端棄置的時候，會發出一個新的 `'abort'` 事件。 [#945](https://github.com/iojs/io.js/pull/945) (Evan Lucas)
+* **V8**：升級 V8 版本到 4.1.0.21。包含一個 embargoed 的修補，當 embargo 被解除時應該可以得到細節的資訊。有一個 破壞性的 ABI 變更不會在這次的升級之中，可能會在 io.js 合入 V8 4.2 版本的時候加上去。參閱 [#952](https://github.com/iojs/io.js/pull/952) 的討論。
+* **npm**：升級 npm 版本到 2.6.0。包含支援新註冊系統和為了 `npm@3` 準備的功能。參閱 [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v260-2015-02-12) 以了解細節。總結：
+  * [#5068](https://github.com/npm/npm/issues/5068) 添加新的登出指令，並讓它對基於 bearer 和 basic 認證的客戶端有用。
+  * [#6565](https://github.com/npm/npm/issues/6565) 提醒 `peerDependency` 行為改變了並添加了提醒到文件。
+  * [#7171](https://github.com/npm/npm/issues/7171) 提醒 `package.json` 中的 `engineStrict` 屬性將會在下一個 npm 主版號移除 (即將到來！)
+* **libuv**：升級版本到 1.4.2。參閱 [libuv 變更日誌](https://github.com/libuv/libuv/blob/v1.x/ChangeLog) 以了解修補的細節。
 
 # ARM 提供 io.js 在 ARMv8 上的支援
 
-ARM contacted Rod Vagg, lead of the io.js Build Working Group, to offer their support to the io.js project. ARM and their hardware partners are on track to make ARMv8 a viable server platform and the nimble nature of server-side JavaScript make it a perfect fit to run on the new ARM.
+ARM 已經聯繫 io.js 建置工作小組的領導者 Rod Vagg，提供他們對 io.js 專案的支援。 ARM 和他們的硬體合作夥伴已經上了軌道讓 ARMv8 成為可運作的伺服器平台，伺服器端 JavaScript 靈活的特性也讓他們完美契合地運行在新的 ARM 上面。
 
-Since ARMv8 is already being adopted by mobile device manufacturers, newer versions of V8 already have good support. Because of V8's pivotal role in Android, io.js is perfectly suited to track that support, and even contribute to it given our new relationships with the V8 team.
+因為 ARMv8 已經被行動設備製造商採用，新版本的 V8 已經有很好的支援。因為 V8 在 Android 中的角色很關鍵，io.js 非常適合去追蹤它的支援情況，更甚至貢獻給 v8 會讓我們與 V8 團隊有新的關係。
 
-From the beginning of the io.js project, Rod has championed the role of ARM for io.js, for IoT, hobbyist, and server use. We already have ARMv6 builds of each release for devices such as Raspberry Pi. and ARMv7 builds for many more popular devices (including the Online Labs ARM-based cloud platform, who have also offered help to io.js). ARMv8 is the logical extension of this, but also has exciting potential for server-side applications, particularly given the new 64-bit support.
+從 io.js 專案開始的時候，Rod 一直倡導 ARM 對於 io.js、物聯網、愛好者和伺服器使用的角色。我們已經在每次釋出對裝置做 ARMv6 的建置，例如：Raspberry Pi。並且對許多受歡迎的裝置做 ARMv7 的建置 (包括基於 ARM 的雲端平台 Online Labs，也對 io.js 提供幫助)。ARMv8 邏輯繼承這些，但也有令人興奮的潛力來建置伺服器端應用程式，特別是它給予新的 64-bit 支援。
 
-The build team is in the process of being given access to the Linaro ARMv8 Server Cluster for integration with the io.js CI platform, which should eventually lead to regular ARMv8 binary releases.
+建置團隊被獲准使用 Linaro ARMv8 伺服器叢集，正在進行跟 io.js CI 平台的整合，這最終應該能導向正規的 ARMv8 二進位檔釋出。
 
 # 社群更新
 
@@ -46,4 +45,4 @@ The build team is in the process of being given access to the Linaro ARMv8 Serve
 * **[jsdom](https://github.com/tmpvar/jsdom)**，針對 WHATWG DOM 和 HTML 標準的實作，剛釋出了 [4.0.0 版本](https://github.com/tmpvar/jsdom/blob/master/Changelog.md#400) 並且加入了 io.js 的依賴需求。
 * **[give](https://github.com/mmalecki/give)** 的作者[發了一則推文](https://twitter.com/maciejmalecki/status/569629100215816192) 宣布新版的 give 將會增加對 io.js 的支援。Give 是基於 git 的 node.js/io.js 版本控制器。
 * **Firebase Realtime Client**，Firebase 官方的 web/node.js 客戶端，[宣布](https://twitter.com/FirebaseRelease/status/570000737343647744) 他們將於 [2.2.1](https://www.firebase.com/docs/web/changelog.html#section-realtime-client) 開始支援 io.js。
-* **Semaphore**，提供持續整合服務商，在 [2015/2/24 平台更新](https://semaphoreapp.com/blog/2015/02/17/platform-update-on-february-24th.html?utm_source=twitter&utm_medium=social&utm_content=platform_update_launch&utm_campaign=platformupdate)中[宣布](https://twitter.com/semaphoreapp/status/570987355005431809)將會支援 io.js。 
+* **Semaphore**，提供持續整合服務商，在 [2015/2/24 平台更新](https://semaphoreapp.com/blog/2015/02/17/platform-update-on-february-24th.html?utm_source=twitter&utm_medium=social&utm_content=platform_update_launch&utm_campaign=platformupdate)中[宣布](https://twitter.com/semaphoreapp/status/570987355005431809)將會支援 io.js。
