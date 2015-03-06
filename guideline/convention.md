@@ -23,7 +23,7 @@
 | nvm | nvm | - |
 | module | 模組 | - |
 | null | null | null |
-| package | package | - |
+| package | 套件 | - |
 | undefined | undefined | undefined |
 
 ## 中英文混雜
