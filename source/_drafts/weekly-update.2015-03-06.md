@@ -7,14 +7,13 @@ categories: iojs 週報
 Buffer.indexOf()、Tessel 2 以及更多消息。
 
 # io.js 1.5.0 釋出
-On Friday, March 6th, @rvagg released io.js v1.5.0. The complete change log can be found on GitHub.
-[@rvagg](https://github.com/rvagg) 在 3/6（五）釋出了 io.js [v1.5.0](https://iojs.org/dist/latest/)。完整的更新項目可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到。
+[@rvagg](https://github.com/rvagg) 在 3/6（五）釋出了 io.js [v1.5.0](https://iojs.org/dist/latest/)。可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到完整的變更日誌。
 
 ## 主要更動
 
-* **buffer:** 提供 Buffer#indexOf() 方法，啟發自 [Array#indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)。接受 String, Buffer 以及 Number 型態. Strings 將視為 UTF8。 (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
+* **buffer:** 提供 Buffer#indexOf() 方法，啟發自 [Array#indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)。接受 String、Buffer 以及 Number 型態。Strings 將視為 UTF8。 (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
 
-* **fs:** options object properties in ‘fs’ methods no longer perform a hasOwnProperty() check, thereby allowing options objects to have prototype properties that apply. (Jonathan Ong) #635
+* **fs:** 「fs」 的方法不再對 options 物件屬性執行 hasOwnProperty() 檢查，以允許 options 物件擁有 apply prototype 的屬性。 (Jonathan Ong) #635
 
 * **tls:** 一個由 PayPal 回報，可能是 TLS 記憶體洩漏的問題。近期對於 **stream_wrap** 的更動可能造成問題。問題回報於 [#1078](https://github.com/iojs/io.js/pull/1078)，你可以在 [#1075](https://github.com/iojs/io.js/issues/1075) 得知目前的進展。(Fedor Indutny)
 
@@ -28,11 +27,11 @@ On Friday, March 6th, @rvagg released io.js v1.5.0. The complete change log can 
 
 * Windows 仍舊有使用者回報存在一些測試錯誤的情形，我們正優先追查這些問題的原因。細節請參閱 [#1005](https://github.com/iojs/io.js/issues/1005)。
 
-* Surrogate pair in REPL can freeze terminal #690
+* 在 REPL 中代理對 (Surrogate pair) 會凍結終端 [#690](https://github.com/iojs/io.js/issues/690)
 
-* Not possible to build io.js as a static library #686
+* 不能編譯 io.js 為靜態函式庫 [#686](https://github.com/iojs/io.js/issues/686)
 
-* process.send() is not synchronous as the docs suggest, a regression introduced in 1.0.2, see #760 and fix in #774
+* 1.0.2 重新加入的 process.send() 不如文件上所說為同步地，參閱 [#760](https://github.com/iojs/io.js/issues/760)  和 [#774](https://github.com/iojs/io.js/issues/774) 的修補
 
 # 來自社群的消息
 
@@ -42,9 +41,9 @@ On Friday, March 6th, @rvagg released io.js v1.5.0. The complete change log can 
 
 * 此外，我們也在此感謝以下的企業，對於 io.js 提供硬體以及相關的技術/支援/工程師的協助：
  
-* Digital Ocean (mainly Linux) Rackspace (mainly Windows) Voxer (OS X and FreeBSD) NodeSource (ARMv6 & ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)
+* Digital Ocean (主要是 Linux) Rackspace (主要是 Windows) Voxer (OS X 和 FreeBSD) NodeSource (ARMv6 & ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)
 
-* io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 [io.js.org](http://iojs.org/) 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的與係嗎？[來協助我們吧！](https://github.com/iojs/website/blob/master/TRANSLATION.md)
+* io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 [io.js.org](http://iojs.org/) 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的語系嗎？[來協助我們吧！](https://github.com/iojs/website/blob/master/TRANSLATION.md)
 
 * 既然提到翻譯，io.js [路徑圖的簡報](http://roadmap.iojs.org/)已經更新並加上其中語系的連結。
 
