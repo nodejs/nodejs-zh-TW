@@ -3,10 +3,10 @@ tags:
 categories: iojs 週報
 ---
 
-# io.js 3/6 週報
 Buffer.indexOf()、Tessel 2 以及更多消息。
 
 # io.js 1.5.0 釋出
+
 [@rvagg](https://github.com/rvagg) 在 3/6（五）釋出了 io.js [v1.5.0](https://iojs.org/dist/latest/)。可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到完整的變更日誌。
 
 ## 主要更動
@@ -21,7 +21,7 @@ Buffer.indexOf()、Tessel 2 以及更多消息。
 
 * **TC:** Colin Ihrig (@cjihrig) 從 TC 退出，因為他希望可以放更多心力在程式撰寫上並減少開會時間。
 
-## 已知的 Issue 
+## 已知的問題
 
 * 可能與 TLS 相關的記憶體洩漏，細節請參閱 [#1075](https://github.com/iojs/io.js/issues/1075)。
 
@@ -33,14 +33,14 @@ Buffer.indexOf()、Tessel 2 以及更多消息。
 
 * 1.0.2 重新加入的 process.send() 不如文件上所說為同步地，參閱 [#760](https://github.com/iojs/io.js/issues/760)  和 [#774](https://github.com/iojs/io.js/issues/774) 的修補
 
-# 來自社群的消息
+# 社群消息
 
 * 聽到 io.js 與 最新版 node.js 沒有受 [FREAK Attack](https://freakattack.com/) 影響，應該鬆一口氣吧。你正使用著 io.js 或最新版的 node.js 對吧？
 
 * Walmart 贊助了建構的機器來運行 io.js Jenkins 持續整合系統。[@iojs/build](https://github.com/orgs/iojs/teams/build) 團隊開始著手進行 SunOS 版本（正如你可以從 node.js 取得的一樣）。不過在此之前，有一個 V8 的臭蟲（[iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)）必須要先修復。
 
 * 此外，我們也在此感謝以下的企業，對於 io.js 提供硬體以及相關的技術/支援/工程師的協助：
- 
+
 * Digital Ocean (主要是 Linux) Rackspace (主要是 Windows) Voxer (OS X 和 FreeBSD) NodeSource (ARMv6 & ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)
 
 * io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 [io.js.org](http://iojs.org/) 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的語系嗎？[來協助我們吧！](https://github.com/iojs/website/blob/master/TRANSLATION.md)
@@ -60,5 +60,8 @@ Buffer.indexOf()、Tessel 2 以及更多消息。
 * 部落格: @eranhammer 寫了一篇名為 [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/) 的文章，其中討論了許多不同版本的 node.js / io.js，建議該使用哪個版本及在何時使用。
 
 # 對 io.js 的支援增加
+
 * [**scrypt**](https://npmjs.com/scrypt) 已經支援 io.js，細節可以參閱這個 [Github Issue](https://github.com/barrysteyn/node-scrypt/issues/39)。
 * [**proxyquire**](https://github.com/thlorenz/proxyquire) 發佈 v1.3.2 並支援 iojs。
+
+原文：[io.js Week of March 6th](https://medium.com/node-js-javascript/io-js-week-of-march-6th-2f9344688277)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
