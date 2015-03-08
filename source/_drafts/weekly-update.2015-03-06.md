@@ -3,54 +3,63 @@ tags:
 categories: iojs 週報
 ---
 
-# io.js 1.5.0 Release
+# io.js 3/6 週報
+Buffer.indexOf()、Tessel 2 以及更多消息。
 
-On Friday, March 6th, [@rvagg](https://github.com/rvagg) released io.js [**v1.5.0**](https://iojs.org/dist/latest/).  The complete change log can be found [on GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md).
+# io.js 1.5.0 釋出
+On Friday, March 6th, @rvagg released io.js v1.5.0. The complete change log can be found on GitHub.
+[@rvagg](https://github.com/rvagg) 在 3/6（五）釋出了 io.js [v1.5.0](https://iojs.org/dist/latest/)。完整的更新項目可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到。
 
-### Notable changes
+## 主要更動
 
-* **buffer**: New `Buffer#indexOf()` method, modelled off [`Array#indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf). Accepts a String, Buffer or a Number. Strings are interpreted as UTF8. (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
-* **fs**: `options` object properties in `'fs'` methods no longer perform a `hasOwnProperty()` check, thereby allowing options objects to have prototype properties that apply. (Jonathan Ong) [#635](https://github.com/iojs/io.js/pull/635)
-* **tls**: A likely TLS memory leak was reported by PayPal. Some of the recent changes in **stream_wrap** appear to be to blame. The initial fix is in [#1078](https://github.com/iojs/io.js/pull/1078), you can track the progress toward closing the leak at [#1075](https://github.com/iojs/io.js/issues/1075) (Fedor Indutny).
-* **npm**: Upgrade npm to 2.7.0. See [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26) for details including why this is a semver-minor when it could have been semver-major.
-* **TC**: Colin Ihrig (@cjihrig) resigned from the TC due to his desire to do more code and fewer meetings.
+* **buffer:** 提供 Buffer#indexOf() 方法，啟發自 [Array#indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)。接受 String, Buffer 以及 Number 型態. Strings 將視為 UTF8。 (Trevor Norris) [#561](https://github.com/iojs/io.js/pull/561)
 
-### Known issues
+* **fs:** options object properties in ‘fs’ methods no longer perform a hasOwnProperty() check, thereby allowing options objects to have prototype properties that apply. (Jonathan Ong) #635
 
-* Possible TLS-related memory leak, details at [#1075](https://github.com/iojs/io.js/issues/1075).
-* Windows still reports some minor test failures and we are continuing to address all of these as a priority. See [#1005](https://github.com/iojs/io.js/issues/1005).
-* Surrogate pair in REPL can freeze terminal [#690](https://github.com/iojs/io.js/issues/690)
-* Not possible to build io.js as a static library [#686](https://github.com/iojs/io.js/issues/686)
-* `process.send()` is not synchronous as the docs suggest, a regression introduced in 1.0.2, see [#760](https://github.com/iojs/io.js/issues/760) and fix in [#774](https://github.com/iojs/io.js/issues/774)
+* **tls:** 一個由 PayPal 回報，可能是 TLS 記憶體洩漏的問題。近期對於 **stream_wrap** 的更動可能造成問題。問題回報於 [#1078](https://github.com/iojs/io.js/pull/1078)，你可以在 [#1075](https://github.com/iojs/io.js/issues/1075) 得知目前的進展。(Fedor Indutny)
 
-# Community Updates
+* **npm:** npm 升級至 2.7.0，細節請參閱[更新項目](https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26)，其中解釋了為什麼這個原本可能是主要版號升級變成了次要版號。
 
-* You can relax knowing that io.js and latest node.js [**are not affected**](https://strongloop.com/strongblog/are-node-and-io-js-affected-by-the-freak-attack-openssl-vulnerability/) by the [FREAK Attack](https://freakattack.com/).  You are running io.js or the latest version of node.js, right?
+* **TC:** Colin Ihrig (@cjihrig) 從 TC 退出，因為他希望可以放更多心力在程式撰寫上並減少開會時間。
 
-* Walmart is now sponsoring a build machine for the io.js Jenkins CI system.  The @iojs/build team is working on creating io.js SunOS binaries (like you can get from nodejs.org).  A V8 fix ([iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)) needs to be landed first before more progress can be made.
-* We would also like to thank the following companies for contributing hardware and related technology/support/engineering for io.js builds:
-  * **Digital Ocean** (mainly Linux)
-  * **Rackspace** (mainly Windows)
-  * **Voxer** (OS X and FreeBSD)
-  * **NodeSource** (ARMv6 & ARMv7)
-  * **Linaro** (ARMv8)
-  * **Walmart** (SmartOS / Solaris)
-* The io.js community has been hard at work on the internationalization of all of its content.  There are now over 20 active languages published on [iojs.org](http://iojs.org) and i18n community sites.  Additionally, i18n links ([iojs/website#258](https://github.com/iojs/website/pull/258)) have been added to the website footer for easy access.  Are we missing your language?  [Help us add it!](https://github.com/iojs/website/blob/master/TRANSLATION.md)
-* Speaking of translations, the [io.js roadmap presentation](http://roadmap.iojs.org/) has been updated to link to other language versions.
+## 已知的 Issue 
 
-* It seems that **PayPal** is running an experiment comparing [Kappa](https://www.npmjs.com/package/kappa)  on io.js vs node.js 0.12 vs node.js v0.10.  The PayPal team identified a likely TLS memory leak. Initial fix is in [#1078](https://github.com/iojs/io.js/pull/1078) and progress towards closing is in [#1075](https://github.com/iojs/io.js/issues/1075)
+* 可能與 TLS 相關的記憶體洩漏，細節請參閱 [#1075](https://github.com/iojs/io.js/issues/1075)。
 
-* [**NodeSource**](http://nodesource.com) is now providing io.js [Linux binary](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories) packages for Ubuntu/Debian as well as RHEL/Fedora distributions.
-* The io.js [Docker build](https://registry.hub.docker.com/u/library/iojs/) is one of thirteen new [official Docker repositories](http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/) added in January and February.
+* Windows 仍舊有使用者回報存在一些測試錯誤的情形，我們正優先追查這些問題的原因。細節請參閱 [#1005](https://github.com/iojs/io.js/issues/1005)。
 
-* NodeBots and IoT people should be happy to hear that the just-announced [**Tessel2**](http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem) runs [io.js natively](http://blog.technical.io/post/112888410737/moving-faster-with-io-js).
-* [**@maxbeatty**](https://twitter.com/maxbeatty) is working on a new version of the [jsperf.com](http://jsperf.com/) backend, running on io.js and it is entirely [open source](https://github.com/jsperf/jsperf.com).  Contributions are welcome!
+* Surrogate pair in REPL can freeze terminal #690
 
-* [@eranhammer](https://twitter.com/eranhammer) wrote a blog post called [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/) which discusses the various node.js / io.js versions and proposes which ones to use and when to use them.
+* Not possible to build io.js as a static library #686
 
+* process.send() is not synchronous as the docs suggest, a regression introduced in 1.0.2, see #760 and fix in #774
 
+# 來自社群的消息
 
-# io.js Support Added
+* 聽到 io.js 與 最新版 node.js 沒有受 [FREAK Attack](https://freakattack.com/) 影響，應該鬆一口氣吧。你正使用著 io.js 或最新版的 node.js 對吧？
 
-* **[scrypt](https://npmjs.com/scrypt)** now supports io.js. Learn more from this [GitHub issue](https://github.com/barrysteyn/node-scrypt/issues/39)
-* **[proxyquire](https://github.com/thlorenz/proxyquire)** v1.3.2 published with support for iojs.
+* Walmart 贊助了建構的機器來運行 io.js Jenkins 持續整合系統。[@iojs/build](https://github.com/orgs/iojs/teams/build) 團隊開始著手進行 SunOS 版本（正如你可以從 node.js 取得的一樣）。不過在此之前，有一個 V8 的臭蟲（[iojs/io.js#1079](https://github.com/iojs/io.js/pull/1079)）必須要先修復。
+
+* 此外，我們也在此感謝以下的企業，對於 io.js 提供硬體以及相關的技術/支援/工程師的協助：
+ 
+* Digital Ocean (mainly Linux) Rackspace (mainly Windows) Voxer (OS X and FreeBSD) NodeSource (ARMv6 & ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)
+
+* io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 [io.js.org](http://iojs.org/) 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的與係嗎？[來協助我們吧！](https://github.com/iojs/website/blob/master/TRANSLATION.md)
+
+* 既然提到翻譯，io.js [路徑圖的簡報](http://roadmap.iojs.org/)已經更新並加上其中語系的連結。
+
+* PayPal 做了一個實驗來比較 [Kappa](https://www.npmjs.com/package/kappa) 運行在 io.js、node.js 0.12，以及 node.js 0.10。PayPal 團隊也發現了可能造成記憶體洩漏的問題。一開始的問題回報在 [#1078](https://github.com/iojs/io.js/pull/1078)，後續的處理在 [#1075](https://github.com/iojs/io.js/issues/1075)。
+
+* [**NodeSource**](http://nodesource.com/) 開始提供 Ubuntu/Debian 的[程式包](https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories)，正如給 RHEL/Fedora 一樣。
+
+* io.js [Docker版本](https://registry.hub.docker.com/u/library/iojs/)，是一、二月中，十三個新加入的 [Docker 官方容器](http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/)的其中之一。
+
+* NodeBots 以及 IoT 的人們應該會很高興聽到這個剛發佈的消息 - [**Tessel2**](http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem) 將[原生支援 io.js](http://blog.technical.io/post/112888410737/moving-faster-with-io-js)。
+
+* [**@maxbeatty**](https://twitter.com/maxbeatty) 正忙於建置新版的 [jsperf.com](http://jsperf.com/) 後端，運行於 io.js 以及完全開放原始碼。歡迎貢獻者！
+
+* 部落格: @eranhammer 寫了一篇名為 [The Node Version Dilemma](http://hueniverse.com/2015/03/02/the-node-version-dilemma/) 的文章，其中討論了許多不同版本的 node.js / io.js，建議該使用哪個版本及在何時使用。
+
+# 對 io.js 的支援增加
+* [**scrypt**](https://npmjs.com/scrypt) 已經支援 io.js，細節可以參閱這個 [Github Issue](https://github.com/barrysteyn/node-scrypt/issues/39)。
+* [**proxyquire**](https://github.com/thlorenz/proxyquire) 發佈 v1.3.2 並支援 iojs。
