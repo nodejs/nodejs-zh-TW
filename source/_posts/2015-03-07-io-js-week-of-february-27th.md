@@ -14,8 +14,8 @@ _注意：版本 **1.4.0** 已經編譯完成並加上標籤但是尚未釋出�
 * **http**：當 `http.ClientRequest` 被客戶端棄置的時候，會發出一個新的 `'abort'` 事件。 [#945](https://github.com/iojs/io.js/pull/945) (Evan Lucas)
 * **V8**：升級 V8 版本到 4.1.0.21。包含一個禁止訪問的修補，當禁止之後被解除時應該可以得到細節的資訊。有一個破壞性的 ABI 變更不會在這次的升級之中，可能會在 io.js 合入 V8 4.2 版本的時候加上去。參閱 [#952](https://github.com/iojs/io.js/pull/952) 的討論。
 * **npm**：升級 npm 版本到 2.6.0。包含支援新註冊系統和為了 `npm@3` 準備的功能。參閱 [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v260-2015-02-12) 以了解細節。總結：
-  * [#5068](https://github.com/npm/npm/issues/5068) 添加新的登出指令，它對基於 bearer 和 basic 認證的客戶端有幫助。
-  * [#6565](https://github.com/npm/npm/issues/6565) 提醒 `peerDependency` 行為改變了並添加了提醒到文件。
+  * [#5068](https://github.com/npm/npm/issues/5068) 增加新的登出指令，它對基於 bearer 和 basic 認證的客戶端有幫助。
+  * [#6565](https://github.com/npm/npm/issues/6565) 提醒 `peerDependency` 的行為改變了並增加了說明文件。
   * [#7171](https://github.com/npm/npm/issues/7171) 提醒 `package.json` 中的 `engineStrict` 屬性將會在下一個 npm 主版號移除 (即將到來！)
 * **libuv**：升級版本到 1.4.2。參閱 [libuv 變更日誌](https://github.com/libuv/libuv/blob/v1.x/ChangeLog) 以了解修補的細節。
 
@@ -48,3 +48,5 @@ ARM 已經聯繫 io.js 建置工作小組的領導者 Rod Vagg，提供他們對
 * **[give](https://github.com/mmalecki/give)** 的作者[發了一則推文](https://twitter.com/maciejmalecki/status/569629100215816192) 宣布新版的 give 將會增加對 io.js 的支援。Give 是基於 git 的 node.js/io.js 版本控制器。
 * **Firebase Realtime Client**，Firebase 官方的 web/node.js 客戶端，[宣布](https://twitter.com/FirebaseRelease/status/570000737343647744) 他們將於 [2.2.1](https://www.firebase.com/docs/web/changelog.html#section-realtime-client) 開始支援 io.js。
 * **Semaphore**，提供持續整合服務商，在 [2015/2/24 平台更新](https://semaphoreapp.com/blog/2015/02/17/platform-update-on-february-24th.html?utm_source=twitter&utm_medium=social&utm_content=platform_update_launch&utm_campaign=platformupdate)中[宣布](https://twitter.com/semaphoreapp/status/570987355005431809)將會支援 io.js。
+
+原文：[io.js Week of February 27th](https://medium.com/node-js-javascript/io-js-week-of-february-17th-9422a589302a)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
