@@ -30,10 +30,13 @@ categories: iojs 週報
 * [NodeUp 84集](http://nodeup.com/eightyfour) 是有關 io.js 最新消息的第一集，參加者是 [Mikeal Rogers](https://github.com/mikeal)，[Trevor Norris](https://github.com/trevnorris)，以及 [Bradley Meck](https://github.com/bmeck)。
 
 * [Mikeal Rogers](https://github.com/mikeal) 接受 [Descriptive](http://descriptive.audio) 於單元稱 [We've Never Had This Many Active Contributors to Core Before](http://descriptive.audio/episodes/12) 中接受採訪。
-* [Mark Wolfe](https://twitter.com/wolfeidau) gave a [talk about io.js](https://twitter.com/wolfeidau/status/575785856545378304) at [@melbjs](https://twitter.com/melbjs) meetup, slides are published [here](https://speakerdeck.com/wolfeidau/iojs-bringing-es6-to-the-node)
+
 * [Mark Wolfe](https://twitter.com/wolfeidau) 在 [@melbjs](https://twitter.com/melbjs) 討論會上給了一個 [talk about io.js](https://twitter.com/wolfeidau/status/575785856545378304) 的簡報，
+
 * [dockeri.co](http://dockeri.co/) 正式運行在 io.js 之上，你可以在[這邊](https://twitter.com/wjblankenship/status/575867637680369665)看到公告。
+
 * [Node.js Advisory Board](https://nodejs.org/about/advisory-board/) 正式開始討論 [io.js/Node.js reconciliation proposal](https://github.com/iojs/io.js/issues/978) 和解草案，你可以在[這裡](https://github.com/joyent/nodejs-advisory-board/blob/master/meetings/2015-03-09/minutes.md#nodejsiojs-reconciliation-bb)看到會議記錄。
+
 * 2015-03-11 的 io.js 技術委員會議可以在 [這裡](http://www.youtube.com/watch?v=xXLnNSL0qvU) 看到
 
 # 即將舉行的活動
