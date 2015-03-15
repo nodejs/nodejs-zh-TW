@@ -23,19 +23,26 @@ categories: iojs 週報
 
 # 社群消息
 
-* [Tony Pujals] (https://twitter.com/subfuzion) gave the io.js roadmap presentation to [BayNode](http://www.meetup.com/BayNode/events/220246228/). The video was posted to [vimeo](https://vimeo.com/121707989) on March 9. Slides are available for anyone to give at their [local meetup](ron.buell@rd.io).
-* [Johan Bergström](https://github.com/jbergstroem) is working on getting a patch into [V8](https://codereview.chromium.org/990063002) on behalf of io.js to bring Solaris support back into the latest version
-* [NodeUp Episode 84](http://nodeup.com/eightyfour) it's io.js update #1 with [Mikeal Rogers](https://github.com/mikeal), [Trevor Norris](https://github.com/trevnorris) and [Bradley Meck](https://github.com/bmeck)
-* [Mikeal Rogers](https://github.com/mikeal) was interviewed for [Descriptive](http://descriptive.audio) podcast on an episoded called [We've Never Had This Many Active Contributors to Core Before](http://descriptive.audio/episodes/12)
-* [Mark Wolfe](https://twitter.com/wolfeidau) gave a [talk about io.js](https://twitter.com/wolfeidau/status/575785856545378304) at [@melbjs](https://twitter.com/melbjs) meetup, slides are published [here](https://speakerdeck.com/wolfeidau/iojs-bringing-es6-to-the-node)
-* [dockeri.co](http://dockeri.co/) now runs on io.js, you can see the announcement [here](https://twitter.com/wjblankenship/status/575867637680369665)
-* [Node.js Advisory Board](https://nodejs.org/about/advisory-board/) are talking about the [io.js/Node.js reconciliation proposal](https://github.com/iojs/io.js/issues/978), you can check the meeting minutes [here](https://github.com/joyent/nodejs-advisory-board/blob/master/meetings/2015-03-09/minutes.md#nodejsiojs-reconciliation-bb)
+* [Tony Pujals] (https://twitter.com/subfuzion) 在 [BayNode](http://www.meetup.com/BayNode/events/220246228/) 做了一個關於 io.js 未來規劃的簡報。影片已經在 3/9 上傳到 [vimeo](https://vimeo.com/121707989)，簡報也可以提供給任何人於[各地討論會](ron.buell@rd.io)上使用。
+
+* [Johan Bergström](https://github.com/jbergstroem) 為了 io.js 正準備向 [V8](https://codereview.chromium.org/990063002) 提交一個修補，要在最新版中加入對 Solaris 的支援。
+
+* [NodeUp 84集](http://nodeup.com/eightyfour) 是有關 io.js 最新消息的第一集，參加者是 [Mikeal Rogers](https://github.com/mikeal)，[Trevor Norris](https://github.com/trevnorris)，以及 [Bradley Meck](https://github.com/bmeck)。
+
+* [Mikeal Rogers](https://github.com/mikeal) 接受 [Descriptive](http://descriptive.audio) 於單元稱 [We've Never Had This Many Active Contributors to Core Before](http://descriptive.audio/episodes/12) 中接受採訪。
+
+* [Mark Wolfe](https://twitter.com/wolfeidau) 在 [@melbjs](https://twitter.com/melbjs) 討論會上給了一個 [talk about io.js](https://twitter.com/wolfeidau/status/575785856545378304) 的簡報，
+
+* [dockeri.co](http://dockeri.co/) 正式運行在 io.js 之上，你可以在[這邊](https://twitter.com/wjblankenship/status/575867637680369665)看到公告。
+
+* [Node.js Advisory Board](https://nodejs.org/about/advisory-board/) 正式開始討論 [io.js/Node.js reconciliation proposal](https://github.com/iojs/io.js/issues/978) 和解草案，你可以在[這裡](https://github.com/joyent/nodejs-advisory-board/blob/master/meetings/2015-03-09/minutes.md#nodejsiojs-reconciliation-bb)看到會議記錄。
+
 * 2015-03-11 的 io.js 技術委員會議可以在 [這裡](http://www.youtube.com/watch?v=xXLnNSL0qvU) 看到
 
 # 即將舉行的活動
 
-* [NodeConf](http://nodeconf.com/) tickets are on sale, June 8th and 9th at Oakland, CA and NodeConf Adventure for June 11th - 14th at Walker Creek Ranch, CA
-* [CascadiaJS](http://2015.cascadiajs.com/) tickets are on sale, July 8th - 10th at Washington State
-* [NodeConf EU](http://nodeconf.eu/) tickets are on sale, September 6th - 9th at Waterford, Ireland
+* [NodeConf](http://nodeconf.com/) 的門票正式販售，6/8~9 於加州奧克蘭。NodeConf Adventure 是 6/11~6/14 於加州沃克溪農場。
+* [CascadiaJS](http://2015.cascadiajs.com/) 門票開賣，時間是 7/8~7/10 於華盛頓州。
+* [NodeConf EU](http://nodeconf.eu/) 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。
 
 原文：[io.js Week of March 13th](https://medium.com/node-js-javascript/io-js-week-of-march-13th-e3024cc66802)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
