@@ -25,7 +25,7 @@ categories: iojs 週報
 
 # 社群消息
 
-* [Tony Pujals] (https://twitter.com/subfuzion) 在 [BayNode](http://www.meetup.com/BayNode/events/220246228/) 做了一個關於 io.js 未來規劃的簡報。影片已經在 3/9 上傳到 [vimeo](https://vimeo.com/121707989)，簡報也可以提供給任何人於[各地討論會](ron.buell@rd.io)上使用。
+* [Tony Pujals](https://twitter.com/subfuzion) 在 [BayNode](http://www.meetup.com/BayNode/events/220246228/) 做了一個關於 io.js 未來規劃的簡報。影片已經在 3/9 上傳到 [vimeo](https://vimeo.com/121707989)，簡報也可以提供給任何人於[各地討論會](ron.buell@rd.io)上使用。
 * [Johan Bergström](https://github.com/jbergstroem) 為了 io.js 正準備向 [V8](https://codereview.chromium.org/990063002) 提交一個修補，要在最新版中加入對 Solaris 的支援。
 * [NodeUp 84集](http://nodeup.com/eightyfour) 是有關 io.js 最新消息的第一集，參加者是 [Mikeal Rogers](https://github.com/mikeal)，[Trevor Norris](https://github.com/trevnorris)，以及 [Bradley Meck](https://github.com/bmeck)。
 * [Mikeal Rogers](https://github.com/mikeal) 接受 [Descriptive](http://descriptive.audio) 於單元稱 [We've Never Had This Many Active Contributors to Core Before](http://descriptive.audio/episodes/12) 中接受採訪。
