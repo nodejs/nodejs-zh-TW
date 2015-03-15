@@ -1,7 +1,9 @@
 title: "io.js 週報 2015.03.13"
+date: 2015-03-15 09:02:55
 tags:
 categories: iojs 週報
 ---
+
 
 # io.js 釋出 1.5.1 版
 
