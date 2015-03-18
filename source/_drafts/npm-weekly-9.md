@@ -5,26 +5,28 @@ categories: npm 週報
 
 本週的 npm 最新消息，同樣也[可以透過 email 訂閱](https://www.npmjs.com/npm-weekly)。
 
-## A hiccup in the CLI
+## 一個暫行性的CLI小問題
 
-Just a heads up for those of you who use npm shrinkwrap --dev, there was a minor bug in that command in last week’s npm@next, which was 2.7.2. Forrest patched it right up and tagged a new npm@next. Thanks to dan_abramov for the helpful report of this issue, and for testing out npm@next.
+只是一個小小的通知，給有使用`npm shrinkwrap --dev`的使用者，在上週的`npm@next`版本中(即`2.7.2`版)，這個指令有個[次要的臭蟲](https://github.com/npm/npm/issues/7641)。[弗里斯特](https://twitter.com/othiym23)馬上進行修補並且標上了新的`npm@next`標籤。感謝 [dan_abramov](https://twitter.com/dan_abramov) 回報了這個非常有幫助的問題以及對`npm@next`的測試。
 
-If you don’t know what npm@next is, it is the version of npm that will be released as the stable release the next week, at which point it is tagged npm@latest. When you run the command npm install -g npm, you get npm@latest. But if you want to be a tester for our new functionality and make sure that it’s as stable as it can be, you can use npm install -g npm@next to do that. We <3 our testers.
+如果你不知道什麼是`npm@next`，它是一個 npm 版本，將會在該版本的下一週釋出成穩定版，而該穩定版會標上`npm@latest`的標籤。當你執行了`npm install -g npm`，你會取得`npm@latest`版本。但如果你想要成為測試者，試用最新的功能，確保它是的確穩定的版本，那你可以使用`npm install -g npm@next`來取得。我們<3測試者。
 
-## What’s coming in npm@3
+## npm@3 將會帶來什麼？
 
-Speaking of npm shrinkwrap, with npm@3 using shrinkwraps will be more convenient. When you install or remove a module with --save in a project with a shrinkwrap, npm will automatically update the npm-shrinkwrap.json for you. As long as you use npm commands to manage your package.json dependencies (instead of hand-editing the dependencies), the npm-shrinkwrap.json will stay in sync.
+說到`npm shrinkwrap`，在`npm@3`中，使用 shrinkwrap 會更加方便。當你在專案目錄下安裝或移除某個模組，並帶上`--save``參數， npm 將會為你自動更新`npm-shrinkwrap.json`。只要你都是使用 npm 指令來管理你 `package.json` 的依賴（而不是手動編修檔案），`npm-shrinkwrap.json`將會保持同步。
 
-## From the community
+## 來自社群
 
-Have you ever been writing a module and an app that uses that module at the same time? Did you use npm link to do it? If not, you’ll probably want to check out this egghead.io video, Using npm link to use node modules that are “in progress”.
+![](https://41.media.tumblr.com/ae98f831f1080fb615e590134b13fd71/tumblr_inline_nld81cxuvF1t68bpr_500.png)
 
-Ben Clinkinbeard, who recorded this screencast, was also behind the PR that made Angular work better with Browserify in the recent release 1.3.14 instantaneous-browserification. So thanks Ben!
+你是否曾經遇過，同時撰寫一種應用程式以及一種模組，而該應用程式同時也使用了該模組？你是否使用`npm link`來做這件事？如果沒有，你可能會想看看 egghead.io 影片，[使用 npm link 來使用"開發中"的 node 模組](https://egghead.io/lessons/node-js-using-npm-link-to-use-node-modules-that-are-in-progress)
 
-## Pre-collection collections
+[Ben Clinkinbeard](https://twitter.com/bclinkinbeard)，該影片的拍攝者，同時也是 PR 背後的作者，讓最近釋出的 [Angular 1.3.14 instantaneous-browserification](https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1314-instantaneous-browserification-2015-02-24) 能夠與 Browserify 更好的結合。所以，感謝 Ben！
 
-We’re planning a feature for npm called collections. These will be user-written guides showing you how to use multiple packages together in one beautiful layout.
+## 預先收集的集合
 
-In the meantime, people have been rolling their own collections. Zeke has been collecting a bunch of these collections to see what people have been doing in the wild. If you have a collection, feel free to let us know there, and you’ll probably want to check out some of the collections that have already been added… they’re pretty neat.
+我們正在規劃 npm 的一個新功能，稱之為集合（暫譯，原文 collections）。這將會是由用戶撰寫的指南，告訴你如何在一個漂亮的佈局下同時使用多個 packages。
+
+在此期間，人們正在製作他們自己的集合。[齊克](https://twitter.com/zeke)已經收集了[一堆集合](https://github.com/npm/newww/issues/313)，看看人們做了些什麼。如果你也有集合，歡迎告訴我們，你也可能會想要看看其他人的集合，他們非常整齊漂亮。
 
 原文：[npm weekly, #9](http://blog.npmjs.org/post/113882628280/npm-weekly-9)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
