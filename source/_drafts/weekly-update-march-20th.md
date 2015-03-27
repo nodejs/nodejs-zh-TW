@@ -3,46 +3,46 @@ date: 2015-03-20 09:02:55
 tags:
 categories: iojs 週報
 ---
-io.js 1.6.1, openssl upgrade, community events and many more.
+io.js 1.6.1, openssl 升級, 社群活動及其他事項。
 
-This week we had a two io.js releases v1.6.1 and v1.6.0, complete changelog can be found on GitHub.
+這週我們釋出兩個 io.js 版本，[v1.6.1](https://iojs.org/dist/v1.6.1/) 及 [v1.6.0](https://iojs.org/dist/v1.6.0/)，完整的更新項目可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到。
 
-## io.js 1.6 Release
+## io.js 1.6 釋出
 
 ### 1.6.1
 
-path: New type-checking on path.resolve() #1153 uncovered some edge-cases being relied upon in the wild, most notably path.dirname(undefined). Type-checking has been loosened for path.dirname(), path.basename(), and path.extname() (Colin Ihrig) #1216.
-querystring: Internal optimizations in querystring.parse() and querystring.stringify() #847 prevented Number literals from being properly converted via querystring.escape() #1208, exposing a blind-spot in the test suite. The bug and the tests have now been fixed (Jeremiah Senkpiel) #1213.
+* **path:** New type-checking on path.resolve() #1153 uncovered some edge-cases being relied upon in the wild, most notably path.dirname(undefined). Type-checking has been loosened for path.dirname(), path.basename(), and path.extname() (Colin Ihrig) #1216.
+* **querystring:** 對於 querystring.parse() 以及 querystring.stringify() 所做的最佳化 [#847](https://github.com/iojs/io.js/pull/847) 妨礙了數字被 querystring.escape() 正確轉換，導致測試出現死角 [#1208](https://github.com/iojs/io.js/issues/1208)。這個臭蟲以及測試都已經被修復 (Jeremiah Senkpiel) [#1213](https://github.com/iojs/io.js/pull/1213)。
 
 ### 1.6.0
 
-node: a new -r or — require command-line option can be used to pre-load modules at start-up (Ali Ijaz Sheikh) #881.
-querystring: parse() and stringify() are now faster (Brian White) #847.
-http: the http.ClientRequest#flush() method has been deprecated and replaced with http.ClientRequest#flushHeaders() to match the same change now in Node.js v0.12 as per joyent/node#9048 (Yosuke Furukawa) #1156.
-net: allow server.listen() to accept a String option for port, e.g. { port: “1234" }, to match the same option being accepted in net.connect() as of joyent/node#9268 (Ben Noordhuis) #1116.
-tls: further work on the reported memory leak although there appears to be a minor leak remaining for the use-case in question, track progress at #1075.
-v8: backport a fix for an integer overflow when — max_old_space_size values above 4096 are used (Ben Noordhuis) #1166.
-platforms: the io.js CI system now reports passes on FreeBSD and SmartOS (Solaris).
-npm: upgrade npm to 2.7.1. See npm CHANGELOG.md for details.
+* **node:** 一個新的 -r 或 — require 命令列參數可以用來在起始階段預先載入模組 (Ali Ijaz Sheikh) [#881](https://github.com/iojs/io.js/pull/881)。
+* **querystring:** parse() 及 stringify() 效能更快了 (Brian White) [#847](https://github.com/iojs/io.js/pull/847)。
+* **http:** http.ClientRequest#flush() 方法已被棄置，取而代之的是 http.ClientRequest#flushHeaders()，與 Node.js v0.12 的改變相同 [joyent/node#9048](https://github.com/joyent/node/pull/9048) (Yosuke Furukawa) [#1156](https://github.com/iojs/io.js/pull/1156)。
+* **net:** 允許 server.listen() 接受字串作為 port 的參數，例如 { port: “1234" } 以符合 [joyent/node#9268](https://github.com/joyent/node/pull/9268) 中 net.connect 接受相容格式的參數 (Ben Noordhuis) [#1116](https://github.com/iojs/io.js/pull/1116)。
+* **tls:** further work on the reported memory leak although there appears to be a minor leak remaining for the use-case in question, track progress at #1075.
+* **v8:** 修補一個整數溢位的問題，當 max_old_space_size 的數值大於 4096 的時候 (Ben Noordhuis) [#1166](https://github.com/iojs/io.js/pull/1166)。
+* **platforms:** io.js CI 回報已經通過 **FreeBSD** 以及 **SmartOS** (Solaris)。
+* **npm:** 升級至 2.7.1，細節請參閱 [npm CHANGELOG.md](https://github.com/npm/npm/blob/master/CHANGELOG.md#v271-2015-03-05)
 
-### Known Issues
+### 已回報問題
 
-Possible remaining TLS-related memory leak(s), details at #1075.
-Surrogate pair in REPL can freeze terminal #690
-Not possible to build io.js as a static library #686
-process.send() is not synchronous as the docs suggest, a regression introduced in 1.0.2, see #760 and fix in #774
-Calling dns.setServers() while a DNS query is in progress can cause the process to crash on a failed assertion #894
+* 可能存在與 TLS 相關的記憶體洩漏問題，細節在 [#1075](https://github.com/iojs/io.js/issues/1075)。
+* Surrogate pair in REPL can freeze terminal #690
+* io.js 無法編譯成靜態函式庫 [#686](https://github.com/iojs/io.js/issues/686)
+* process.send() is not synchronous as the docs suggest, a regression introduced in 1.0.2, see #760 and fix in #774
+* 當 DNS 查詢進行中的時候呼叫 dns.setServers() 將會導致程序崩潰 [#894](https://github.com/iojs/io.js/issues/894)
 
-## Community Updates
-browserify supports io.js, you can check the announcement here
-express.js added support to io.js
-Over the last two weeks we got access to hardware from Joyent and upstreamed a patch to V8 so we got io.js building. After that we worked on passing tests for both SmartOS and FreeBSD which as of two days ago now pass, this was thanks to the amazing work of the build team and Johan Bergström
-Petka Antonov is proposing a workers implementation in io.js under an experimental flag, you can join the discussion here
-io.js upgraded openssl to 1.0.1m
+## 社群更新
+* browserify 開始支援 io.js，可以到[這裡](https://twitter.com/yosuke_furukawa/status/577150547850969088)看到公告。
+* express.js 加入對 io.js 的支援。
+* Over the last two weeks we got access to hardware from Joyent and upstreamed a patch to V8 so we got io.js building. After that we worked on passing tests for both SmartOS and FreeBSD which as of two days ago now pass, this was thanks to the amazing work of the build team and Johan Bergström
+* [Petka Antonov](https://github.com/petkaantonov) 提出在 io.js 中實作 workers（需要加上實驗旗標來啟用），你可以到[這裡](https://github.com/iojs/io.js/pull/1159)參與討論。
+* io.js 把 openssl [升級](https://github.com/iojs/io.js/pull/1206)到 1.0.1m。
 
-## Upcoming Events
-NodeConf tickets are on sale, June 8th and 9th at Oakland, CA and NodeConf Adventure for June 11th — 14th at Walker Creek Ranch, CA
-CascadiaJS tickets are on sale, July 8th — 10th at Washington State
-NodeConf EU tickets are on sale, September 6th — 9th at Waterford, Ireland
+## 即將舉行的活動
+* [NodeConf](http://nodeconf.com/) 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。
+* [CascadiaJS](http://2015.cascadiajs.com/) 門票開賣，時間是 7/8~7/10 於華盛頓州。
+* [NodeConf EU](http://nodeconf.eu/) 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。
 
 原文：[io.js Week of March 20th](https://medium.com/node-js-javascript/io-js-1-6-release-1df38cf64e6c)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
