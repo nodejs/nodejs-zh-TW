@@ -1,5 +1,4 @@
 title: "io.js 週報 2015.03.27"
-date: 2015-03-27 00:00:00
 tags:
 categories: iojs 週報
 ---
