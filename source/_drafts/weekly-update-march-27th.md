@@ -8,15 +8,15 @@ categories: iojs 週報
 
 ## 值得注意的更動
 
-* **Windows:** 再一次，進行中改善可以在測試案例看到結果。如同 v1.4.2 更新日誌，CI系統及設定問題阻礙了Windows測試正確地回報結果，這個問題及代碼似乎已經完全解決。
+* **Windows:** 再一次，進行中改善可以在測試案例看到結果。如同 v1.4.2 更新日誌，CI 系統及設定問題阻礙了 Windows 測試正確地回報結果，這個問題及代碼似乎已經完全解決。
 * **FreeBSD:** 一個影響 io.js/Node.js 的[核心臭蟲](https://lists.freebsd.org/pipermail/freebsd-current/2015-March/055043.html)已經被[發掘](https://github.com/joyent/node/issues/9326)且修補已經出爐避免io.js被影響（Fedor Indutny）[#1218](https://github.com/iojs/io.js/pull/1218)。
-* **module:** 顯在你可以用 `require('.')` 來取代 `require('./')`，這個考慮是個臭蟲修補（Michaël Zasso）[#1185](https://github.com/iojs/io.js/pull/1185)。
+* **module:** 現在你可以用 `require('.')` 來取代 `require('./')`，這個考慮是個臭蟲修補（Michaël Zasso）[#1185](https://github.com/iojs/io.js/pull/1185)。
 * **v8:** 更新到 4.1.0.25 包含— `max_old_space_size` 數值大於 4096 及支援 Solaris，兩者都已經包含在 io.js。
 
 ## 已知問題
 
 * 有個微小的記憶體洩漏可能仍然存在，但是已經是當地被識別出來，詳細請見 [#1075](https://github.com/iojs/io.js/issues/1075)。
-* REPL的代理配對會導致終端凍結 [#690](https://github.com/iojs/io.js/issues/690)
+* REPL 的代理配對會導致終端凍結 [#690](https://github.com/iojs/io.js/issues/690)
 * io.js 不可能編譯成靜態函式庫 [#686](https://github.com/iojs/io.js/issues/686)
 * `process.send()` 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 [#760](https://github.com/iojs/io.js/issues/760) 及修改 [#774](https://github.com/iojs/io.js/issues/774)
 * 當某個DNS查詢正在處理中，呼叫 `dns.setServers()` 會導致程序崩潰在某個失敗的斷言 [#894](https://github.com/iojs/io.js/issues/894)
