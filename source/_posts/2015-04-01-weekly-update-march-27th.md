@@ -1,7 +1,10 @@
 title: "io.js 週報 2015.03.27"
+date: 2015-04-01 15:25:28
 tags:
 categories: iojs 週報
 ---
+
+
 ## io.js 1.6.2 釋出
 
 這週我們有一個新版本釋出 [v1.6.2](https://iojs.org/dist/v1.6.2/)，完整的更新日誌可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 找到。
@@ -31,6 +34,6 @@ categories: iojs 週報
 * [NodeConf](http://nodeconf.com/) 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。
 * [CascadiaJS](http://2015.cascadiajs.com/) 門票開賣，時間是 7/8~7/10 於華盛頓州。
 * [NodeConf EU](http://nodeconf.eu/) 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。
-* [nodeSchool 東京](http://nodejs.connpass.com/event/13182/) 將會在4/12於日本東京舉辦。
+* [nodeSchool 東京](http://nodejs.connpass.com/event/13182/) 將會在 4/12 於日本東京舉辦。
 
 原文：[io.js Week of March 27th](https://medium.com/node-js-javascript/io-js-week-of-march-27th-9555f36bbb9a)，作者：[@iojs](https://medium.com/@iojs)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
