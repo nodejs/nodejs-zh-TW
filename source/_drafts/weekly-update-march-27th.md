@@ -15,7 +15,7 @@ categories: iojs 週報
 
 ## 已知問題
 
-* 有個微小的記憶體洩漏可能仍然存在，但是已經是當地被識別出來，詳細請見 [#1075](https://github.com/iojs/io.js/issues/1075)。
+* 有個微小的記憶體洩漏可能仍然存在，但是已經是適當地被識別出來，詳細請見 [#1075](https://github.com/iojs/io.js/issues/1075)。
 * REPL 的代理配對會導致終端凍結 [#690](https://github.com/iojs/io.js/issues/690)
 * io.js 不可能編譯成靜態函式庫 [#686](https://github.com/iojs/io.js/issues/686)
 * `process.send()` 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 [#760](https://github.com/iojs/io.js/issues/760) 及修改 [#774](https://github.com/iojs/io.js/issues/774)
