@@ -1,8 +1,8 @@
 title: npm 週報 2015-03-31
-date: 2015-03-31 12:00:00
 tags:
 categories: npm 週報
 ---
+
 ## Angular 增加對 Browserify 的支援
 
 ![](https://40.media.tumblr.com/356647e1c5f5d0b39e7cc34c345cbd12/tumblr_inline_nm34lv74av1t68bpr_500.png)
