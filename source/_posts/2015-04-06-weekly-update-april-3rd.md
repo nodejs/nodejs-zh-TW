@@ -1,9 +1,11 @@
 title: "io.js 週報 2015.04.03"
-date: 2015-04-03 09:02:55
+date: 2015-04-06 23:49:54
 tags:
 categories: iojs 週報
 ---
+
 ## v1.6.3 釋出
+
 這週我們有一個新版本釋出 [v1.6.3](https://iojs.org/dist/v1.6.3/)，完整的更新日誌可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 找到。
 
 ## 值得注意的更動
