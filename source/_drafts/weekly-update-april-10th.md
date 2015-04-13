@@ -15,11 +15,11 @@ categories: iojs 週報
 
 ### 已知問題
 
-* Some problems with unreferenced timers running during beforeExit are still to be resolved. See #1264.
-* Surrogate pair in REPL can freeze terminal #690
-* Not possible to build io.js as a static library #686
-* process.send() is not synchronous as the docs suggest, a regression introduced in 1.0.2, see #760 and fix in #774
-* Calling dns.setServers() while a DNS query is in progress can cause the process to crash on a failed assertion #894
+* 在 beforeExit 執行未參考的 timer 仍存在一些問題需要解決 [#1264](https://github.com/iojs/io.js/issues/1264)。
+* REPL 的代理配對會導致終端凍結 [#690](https://github.com/iojs/io.js/issues/690)。
+* io.js 不可能編譯成靜態函式庫 [#686](https://github.com/iojs/io.js/issues/686)。
+* process.send() 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 [#760](https://github.com/iojs/io.js/issues/760) 及修改 [#774](https://github.com/iojs/io.js/issues/774)。
+* 當某個DNS查詢正在處理中，呼叫 dns.setServers() 會導致程序崩潰在某個失敗的斷言 [#894](https://github.com/iojs/io.js/issues/894)。
 
 ### 社群更新
 
