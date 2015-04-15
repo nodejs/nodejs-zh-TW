@@ -1,7 +1,9 @@
 title: "io.js 週報 2015.04.10"
+date: 2015-04-15 08:47:01
 tags:
 categories: iojs 週報
 ---
+
 ## io.js 1.6.4 release
 
 這週我們有一個 io.js 釋出版本 [v1.6.4](https://iojs.org/dist/v1.6.4/)，完整的更新項目可以在 [GitHub](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到。
