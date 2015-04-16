@@ -3,6 +3,7 @@ date: 2015-03-20 09:02:55
 tags:
 categories: iojs 週報
 ---
+
 io.js 1.6.1, openssl 升級, 社群活動及其他事項。
 
 這週我們釋出兩個 io.js 版本，[v1.6.1](https://iojs.org/dist/v1.6.1/) 及 [v1.6.0](https://iojs.org/dist/v1.6.0/)，完整的更新項目可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上找到。
