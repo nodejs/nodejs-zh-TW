@@ -1,9 +1,9 @@
-title: "npm 週報 2015-04-14"
+title: "npm 週報 #12"
 tags:
 categories: npm 週報
 ---
 
-## npm Weekly, #12
+## npm 週報 #12
 
 ![](https://40.media.tumblr.com/26d4e04a7715c15871155307637f9201/tumblr_inline_nmt1v12YZY1t68bpr_500.png)
 今天開始就可以使用[私有模組](https://www.npmjs.com/private-modules)。
