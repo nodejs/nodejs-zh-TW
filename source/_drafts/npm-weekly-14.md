@@ -11,10 +11,10 @@ Continuing the trend of frameworks moving their plugins to npm, Apache Cordova a
 
 ## CLI 消息
 
-npm@next brings us up to version 2.9.0. There were two nanofeatures introduced. When you run npm outdated or npm update local modules will be included, and the prefix before the version in git version tags added by npm version is now configurable.
+npm@next 這周帶來了 2.9.0 版本，此更新有兩個小修正，當您使用 npm outdated 或 npm update 指令更動本地端套件時，版本前面的前置名稱現在可以透過 npm 來設定了。
 
-## deploying github pages
+## 部署 github 頁面
 
-Are you maintaining a GitHub pages site? You can make your deployment process a little smoother using [npm run scripts](https://docs.npmjs.com/cli/run-script). Jessica Lord has a [great example](https://github.com/jlord/git-it/blob/master/package.json#L14-L17) in the git-it package.
+您還在維護個人 Github 網站嗎？您可以透過 [npm run scripts](https://docs.npmjs.com/cli/run-script) 指令讓部署過程更順暢。Jessica Lord 寫了一個[簡單範例]((https://github.com/jlord/git-it/blob/master/package.json#L14-L17))在 git-it 套件內。
 
 原文：[npm Weekly, #13](http://blog.npmjs.org/post/117716297055/npm-weekly-14)，作者：[@LINCLARK](http://linclark.tumblr.com/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
