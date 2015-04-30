@@ -3,11 +3,11 @@ tags:
 categories: npm 週報
 ---
 
-## cordova 套件轉移到 npm
+## Cordova 套件轉移到 npm
 
 ![](http://36.media.tumblr.com/2d401fa2e2e47128436526ca89754ace/tumblr_inline_nnl6v1YPDr1t68bpr_400.png)
 
-Continuing the trend of frameworks moving their plugins to npm, Apache Cordova announced that it will use npm for its core plugins and is encouraging plugin developers to do the same. If you’re a Cordova dev, read their [instructions](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) to find out how.
+現在有許多框架持續將套件轉移到 npm 的趨勢，Apache Cordova 宣布將其核心套件轉移到 npm 並且確保開發者可以使用此方式開發套件。假如您是 Cordova 開發者，請直接閱讀[開發指南]((http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html))。
 
 ## CLI 消息
 
