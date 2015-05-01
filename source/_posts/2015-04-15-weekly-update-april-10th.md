@@ -32,7 +32,7 @@ categories: iojs 週報
 
 ### 即將舉行的活動
 
-* [JSConf 烏拉圭](http://jsconf.uy/)的門票已經開賣，時間時 4/24~4/25 於烏拉圭蒙特維多。
+* [JSConf 烏拉圭](http://jsconf.uy/)的門票已經開賣，時間是 4/24~4/25 於烏拉圭蒙特維多。
 * [NodeConf Adventure](http://nodeconf.com/) 則是 6/11-14 於加州沃克溪農場。
 * [CascadiaJS](http://2015.cascadiajs.com/) 門票開賣，時間是 7/8~7/10 於華盛頓州。
 * [NodeConf EU](http://nodeconf.eu/) 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。
