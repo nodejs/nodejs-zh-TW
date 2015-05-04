@@ -1,5 +1,7 @@
 title: "打造一個更好的 Node 社群"
-date: 2014-10-10
+tags:
+categories: iojs 文章
+---
 
 ## 一個關於讓 Node 變得更好的小故事
 
