@@ -1,7 +1,11 @@
 title: "打造一個更好的 Node 社群"
+date: 2015-05-05 00:45:52
 tags:
 categories: iojs 文章
 ---
+
+
+![](https://d262ilb51hltx0.cloudfront.net/max/1000/1*bupWLg7JyqowFbDYltlXFQ.jpeg)
 
 ## 一個關於讓 Node 變得更好的小故事
 
