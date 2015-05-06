@@ -19,6 +19,6 @@ With this week’s npm@next you’ll see yet more improvements to git support. I
 
 ## npm 團隊加入新成員
 
-We’re adding more humans to the npm team, and the first of the new humans is here! Welcome to Ernie Salazar who will be helping you out when you contact support@npmjs.com or @npm_support.
+npm 團隊目前增加了許多成員，第一位成員已經到職！讓我們歡迎 [Ernie Salazar](https://twitter.com/ehsalazar) 加入團隊，假如您透過 [support@npmjs.com](mailto:support@npmjs.com) 或 [@npm_support](https://twitter.com/npm_support) 來聯絡我們，Ernie Salazar 會負責幫忙回覆或解決您的問題。
 
 原文：[npm Weekly, #15](http://blog.npmjs.org/post/118232691905/npm-weekly-15)，作者：[@LINCLARK](http://linclark.tumblr.com/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
