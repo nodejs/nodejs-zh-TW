@@ -9,9 +9,9 @@ categories: npm 週報
 
 ![](http://41.media.tumblr.com/a06b6aafca728319c26c695e22cd7125/tumblr_inline_nnwdwo8VkD1t68bpr_540.jpg)
 
-Inspired by the challenge of running npm install to completion at NodeConf last year, Bryan English put together registry in a box. It provides “discoverable npm registry mirrors for situations like NodeConf, where the network is great, but the Internet bandwidth is limited.” Make sure to install it before NodeConf Adventure this June.
+Inspired by the challenge of running npm install to completion at NodeConf last year, [Bryan English](https://twitter.com/bengl) put together [registry in a box](https://www.npmjs.com/package/reginabox). It provides “discoverable npm registry mirrors for situations like NodeConf, where the network is great, but the Internet bandwidth is limited.” Make sure to install it before [NodeConf Adventure](http://nodeconf.com/) this June.
 
-(picture by Matthew Bergman).
+([圖片](https://secure.flickr.com/photos/matthewbergman/14565350776/in/album-72157645452192986/)來自 [Matthew Bergman](https://twitter.com/FotoVerite)).
 
 ## CLI 新功能？
 
