@@ -9,13 +9,15 @@ categories: npm 週報
 
 ![](http://41.media.tumblr.com/a06b6aafca728319c26c695e22cd7125/tumblr_inline_nnwdwo8VkD1t68bpr_540.jpg)
 
-Inspired by the challenge of running npm install to completion at NodeConf last year, [Bryan English](https://twitter.com/bengl) put together [registry in a box](https://www.npmjs.com/package/reginabox). It provides “discoverable npm registry mirrors for situations like NodeConf, where the network is great, but the Internet bandwidth is limited.” Make sure to install it before [NodeConf Adventure](http://nodeconf.com/) this June.
+有鑒於去年在 NodeConf 時，要能夠完整執行 npm install 所遭遇的挑戰，[Bryan English](https://twitter.com/bengl) 提出了 [registry in a box](https://www.npmjs.com/package/reginabox)。這個套件能提供「可被查詢的 npm 鏡像，適合像 NodeConf 這類網路通暢但是對外頻寬有限
+的情況」。別忘了在參加六月 [NodeConf Adventure](http://nodeconf.com/) 之前先安裝好。
 
 ([圖片](https://secure.flickr.com/photos/matthewbergman/14565350776/in/album-72157645452192986/)來自 [Matthew Bergman](https://twitter.com/FotoVerite)).
 
 ## CLI 新功能？
 
-With this week’s npm@next you’ll see yet more improvements to git support. If you’re depending on multiple branches of a single git dependency in a single project, you probably want to check out npm@2.9.1 and verify that things (again?) work correctly in your project. Try it out with npm install -g npm@next.
+在這週的 npm@next 你可以看到更多對於 git 支援的改良。如果你在專案中有需要依賴多個分支的情況，或許你會想試試 npm@2.9.1 並驗證看看在你的專案
+是否運行正常。你可以透過 npm install -g npm@next 來試試看。
 
 ## npm 團隊加入新成員
 
