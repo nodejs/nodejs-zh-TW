@@ -1,0 +1,28 @@
+title: "npm 週報 #16"
+tags:
+categories: npm 週報
+---
+
+## 免費試用 npm 私有模組
+
+![](http://40.media.tumblr.com/2fe2baaaab93c0c63d8908bfe9ddb9a9/tumblr_inline_no9h6xBVWn1t68bpr_540.png)
+
+想試試私有模組的功能嗎？如果你在這個週五之前（5/15）用 **npm-weekly** 這個折扣代碼註冊的話，你就可以免費試用一個月的時間。
+
+## CLI 有什麼新功能？
+
+支援 SPDX!!!
+
+如果你在企業中從事夠多的開發的話，你就會知道了解軟體授權是一件非常重要的事。幸運的是，Linux 基金會制定了 SPDX，一種讓授權資訊便於透過
+程式分析的格式。感謝 [Kyle Mitchell](https://twitter.com/kemitchell)，npm 將會鼓勵以 SPDX 的方式來標註套件的授權資訊。
+
+從長遠來看，如果所有的套件都開始使用這個格式來標註它們的授權資訊，將有許多人因而受惠。想知道更詳細的內容可以參閱 [CHANGELOG](https://github.com/npm/npm/blob/master/CHANGELOG.md#v2100-2015-05-8) 。
+
+
+## 建立一個簡單的命令列介面工具
+
+我們曾經問過你們打算如何使用私有模組的功能，一個經常出現的答案就是，給團隊成員們用於開發專案的命令列介面工具。
+
+這篇文章將教你們[透過建立可重複使用的 npm run scripts 來簡化開發流程](http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm)。
+
+原文：[npm Weekly, #16](http://blog.npmjs.org/post/118819863320/npm-weekly-16)，作者：[@npm](http://blog.npmjs.org/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
