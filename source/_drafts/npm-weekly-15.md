@@ -3,7 +3,7 @@ tags:
 categories: npm 週報
 ---
 
-你希望可以[直接收到](https://www.npmjs.com/npm-weekly) npm 最新更新的消息嗎？
+你希望可以[收到](https://www.npmjs.com/npm-weekly) npm 最新更新的消息嗎？
 
 ## registry in a box
 
