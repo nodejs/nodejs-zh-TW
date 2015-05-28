@@ -2,23 +2,23 @@ title: "io.js Week of May 15th"
 tags:
 categories: iojs 週報
 ---
-## io.js News
+## io.js 新聞
 
-We are happy to announce this news, **“io.js decides to join the Node Foundation”**. And our organization name will be renamed nodejs.
+我們很高興宣告 **“io.js 決定加入 Node 基金會”**。組織名稱將改名為 nodejs。
 
-As a first step, we will move from iojs organization to nodejs organization and will converge joyent/node gradually. We will continue to release io.js until the convergence have done.
+如同第一步，我們將從 iojs 組織移動到 nodejs 組織，並逐漸地收斂到 joyent/node。我們將會持續釋出 io.js 直到收斂完成。
 
-If you would like to see the convergence plan in detail, please check it at [jasnell repo](https://github.com/jasnell/dev-policy/blob/master/convergence.md). When you would like to ask questions, feel free to ask [@Fishrock123](fishrock123@rocketmail.com). The discussion log is [here](https://github.com/nodejs/node/issues/1664).
+如果你想更仔細知道有關收斂計畫，請見 [jasnell 儲存庫](https://github.com/jasnell/dev-policy/blob/master/convergence.md)。如果你想要問問題，歡迎詢問 [@Fishrock123](fishrock123@rocketmail.com)。討論記錄在[這裡](https://github.com/nodejs/node/issues/1664)。
 
-## Community Updates
+## 社群更新
 
-* [Performance Showdown](https://raygun.io/blog/2015/05/performance-showdown-node-js-vs-io-js-v2-0-0/): Node.js vs. io.js v2.0.0.
-* Microsoft has [node.js](https://github.com/Microsoft/node) running on their JavaScript VM Chakra.
-* {node,io}.js [benchmark graphs](http://thlorenz.com/benchgraph/).
-* [TC members](https://twitter.com/rvagg/status/598605393636429825) decide to move io.js to Node Foundation and the organization name will be renamed nodejs.
-* Hardware WG Meeting on [YouTube](https://www.youtube.com/watch?v=EFJVMGRtDWE).
-* io.js/node.js Build Convergence Meeting on [YouTube](https://www.youtube.com/watch?v=8dxkM9vHmrY).
-* TC Meeting on [YouTube](https://www.youtube.com/watch?v=UbYiFLf7MpU).
+* [效能決勝](https://raygun.io/blog/2015/05/performance-showdown-node-js-vs-io-js-v2-0-0/): Node.js vs. io.js v2.0.0.
+* 微軟將 [node.js](https://github.com/Microsoft/node) 執行在他們的 JavaScript VM Chakra。
+* {node,io}.js [評效圖表](http://thlorenz.com/benchgraph/).
+* [技術委員會成員](https://twitter.com/rvagg/status/598605393636429825) 決定移動 io.js 到 Node 基金會並將組織名稱改名為 nodejs。
+* 硬體工作小組會議在 [YouTube](https://www.youtube.com/watch?v=EFJVMGRtDWE).
+* io.js/node.js 建置收斂會議在 [YouTube](https://www.youtube.com/watch?v=8dxkM9vHmrY).
+* 技術委員會會議在 [YouTube](https://www.youtube.com/watch?v=UbYiFLf7MpU).
 
 ## 即將舉行的活動
 
