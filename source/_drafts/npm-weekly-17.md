@@ -32,7 +32,7 @@ categories: npm 週報
 
 如果你在學找如何學習 (或教) npm，可以嘗試 [how-to-npm workshop](https://www.npmjs.com/package/how-to-npm)。
 
-## spdx support visualized
+## 視覺化的 spdx 支援
 
 在上個禮拜的 weekly，我們談到 SPDX。隨著 SPDX License Expression Syntax，你可簡單的用工具找出你的程式碼的許可方式。這對企業使用者非常好。
 
