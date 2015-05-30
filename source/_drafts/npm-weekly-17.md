@@ -3,39 +3,39 @@ tags:
 categories: npm 週報
 ---
 
-## an even better command line tool
+## 一個更好的命令列工具
 
 ![](http://36.media.tumblr.com/40fd39efa1f8fd762cda345dbfb2a4ee/tumblr_inline_nomg3uqYwM1t68bpr_540.png)
 
-Last week we showed you how to build a simple command line tool. This week, we show you how to make improvements to your tool.
+上個禮拜我們展示如何建置一個簡單的命令列工具給你看。這個禮拜，我們告訴你如何改進你的工具。
 
-- [Add subcommands to your command line tool](http://blog.npmjs.org/post/119317128765/adding-subcommands-to-your-command-line-tool)
-- [Make your command line tool configurable](http://blog.npmjs.org/post/119377806820/making-your-command-line-tool-configurable)
+- [添加子命令到你的命令列工具](http://blog.npmjs.org/post/119317128765/adding-subcommands-to-your-command-line-tool)
+- [讓你的命令列工具變成可設定的](http://blog.npmjs.org/post/119377806820/making-your-command-line-tool-configurable)
 
 ## npmHumans++
 
-We added another new human, this time on the registry team. [Ryan Day](https://twitter.com/soldair) will be joining [CJ](https://twitter.com/ceejbot), [Ben](https://twitter.com/BenjaminCoe), and [Maciej](https://twitter.com/maciejmalecki) in making sure the registry can keep up with the ever exploding amount of traffic.
+我們增加了一個新人，現在在 registry 團隊。[Ryan Day](https://twitter.com/soldair) 將會加入 [CJ](https://twitter.com/ceejbot)、[Ben](https://twitter.com/BenjaminCoe) 和 [Maciej](https://twitter.com/maciejmalecki) 來確保 registry 可以跟上不斷上升的流量。
 
 ## npmHumans.speak()
 
 ![](http://41.media.tumblr.com/c908e342fd015f2af2108f0ce3f51406/tumblr_inline_nomg4isFbL1t68bpr_540.png)
 
-Speaking of the ever exploding registry traffic, [CJ](https://twitter.com/ceejbot) will be speaking at [Web Rebels](https://www.webrebels.org/) on Friday and [NodeConf One-Shot Oslo](http://oslo.nodeconf.com/) on Saturday about how the team made the registry scale.
+說到曾經爆衝的流量，[CJ](https://twitter.com/ceejbot) 禮拜五將會在 [Web Rebels](https://www.webrebels.org/) 和禮拜六在 [NodeConf One-Shot Oslo](http://oslo.nodeconf.com/) 談論團隊如何讓 registry 擴展。
 
-If you’re interested in [what to expect in npm@3](https://www.youtube.com/watch?v=9I2KgK2mYGM&feature=youtu.be&t=31m24s), check out [Rebecca’s](https://twitter.com/ReBeccaOrg) talk from the Boston Ember meetup.
+如果你對 [在 npm@3 可以期待什麼](https://www.youtube.com/watch?v=9I2KgK2mYGM&feature=youtu.be&t=31m24s) 有興趣，可以參考 [Rebecca’s](https://twitter.com/ReBeccaOrg) 在 Boston Ember 聚會的談話。
 
-And [Raquel](https://twitter.com/rockbot) spoke with the descriptive podcast about her journey to becoming a Web developer in [Hilariously, Isaac Emailed Me](http://descriptive.audio/episodes/18).
+還有 [Raquel](https://twitter.com/rockbot) 用播客談到關於她成為一個 Web 開發者的旅程在 [很開心，Isaac 寄了 Email 給我](http://descriptive.audio/episodes/18)。
 
-## nodeschool international day
+## nodeschool 國際日
 
-Want to learn Node? This Saturday there will be NodeSchools held [all around the world](http://nodeschool.io/international-day/).
+想要學 Node？這個星期六將會有 NodeSchools [在世界各地](http://nodeschool.io/international-day/) 舉辦。
 
-If you’re looking to learn (or teach) npm, try out the [how-to-npm workshop](https://www.npmjs.com/package/how-to-npm).
+如果你在學找如何學習 (或教) npm，可以嘗試 [how-to-npm workshop](https://www.npmjs.com/package/how-to-npm)。
 
 ## spdx support visualized
 
-In the last weekly, we talked about SPDX. With SPDX License Expression Syntax, you can make it easy for tools to figure out how your code is licensed. This is great for enterprise users.
+在上個禮拜的 weekly，我們談到 SPDX。隨著 SPDX License Expression Syntax，你可簡單的用工具找出你的程式碼的許可方式。這對企業使用者非常好。
 
-If you’re wondering which packages have parseable license strings (and which don’t) check out the new site from Kyle Mitchell, [npm1K](http://npm1k.org/).
+如果你想知道哪個套件有可解析的許可證字串 (還有哪個沒有)，可以查看 Kyle Mitchell 的新網站，[npm1K](http://npm1k.org/)。
 
 原文：[npm Weekly, #17](http://blog.npmjs.org/post/119399973890/npm-weekly-17)，作者：[@npm](http://blog.npmjs.org/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
