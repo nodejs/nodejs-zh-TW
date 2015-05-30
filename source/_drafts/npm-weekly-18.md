@@ -3,39 +3,39 @@ tags:
 categories: npm 週報
 ---
 
-## so many modules
+## 許多的模組
 
 ![](http://40.media.tumblr.com/1c0aee3ceac72cd84654c0c73046cdc3/tumblr_inline_np0zcr2GWr1t68bpr_500.png)
 
-As of [Saturday](https://twitter.com/ReBeccaOrg/status/601920015592460288), npm has the most modules of any module registry, by any measure… for any programming language. Thanks for all your contributions :)
+截至 [禮拜六](https://twitter.com/ReBeccaOrg/status/601920015592460288)，npm 擁有所有模組 registry 裡面最多的模組，包括任何的計量… 針對任何程式語言。 感謝你所有的貢獻 :)
 
-## wombats at jsconf
+## wombats 在 jsconf
 
 ![](http://40.media.tumblr.com/06e2604bc4f34d32c3eec56a8a53875b/tumblr_inline_np0rk6N5WH1t68bpr_540.png)
 
-npm is sponsoring the live [transcription at JSConf](https://twitter.com/linclark/status/603580915130966017), and 41.6% of the npm team will be at JSConf this week (which means we’re about ~1% of attendees). The conferencing wombats are (from right to left) [Rebecca](https://twitter.com/ReBeccaOrg), [Ryan](https://twitter.com/soldair), [Lin](https://twitter.com/linclark), [Forrest](https://twitter.com/othiym23), and [Laurie](https://twitter.com/seldo). We’d love to meet you, so say hi if you see us.
+npm 贊助直播 [記錄在 JSConf](https://twitter.com/linclark/status/603580915130966017)，這個禮拜 41.6% 的 npm 團隊將會在 JSConf (表示我們是 ~1% 的參與者)。與會的 wombats 有 (從右到左) [Rebecca](https://twitter.com/ReBeccaOrg)、[Ryan](https://twitter.com/soldair)、[Lin](https://twitter.com/linclark), [Forrest](https://twitter.com/othiym23) 和 [Laurie](https://twitter.com/seldo)。我們會很高興認識你，所以如果你看到我們記得說聲嗨。
 
-## in search of more wombats
+## 尋找更多 wombats
 
-We have a a slew of new job listings.
+我們有大量的新職缺清單。
 
-- [UX/UI designer](https://www.npmjs.com/jobs#ux-ui-designer)
-- [Team lead](https://www.npmjs.com/jobs#team-lead-www-team)
-- [Frontend engineer](https://www.npmjs.com/jobs#frontend-engineer-www-team)
-- [Backend engineer](https://www.npmjs.com/jobs#backend-engineer-www-team)
+- [UX/UI 設計師](https://www.npmjs.com/jobs#ux-ui-designer)
+- [團隊領導](https://www.npmjs.com/jobs#team-lead-www-team)
+- [前端工程師](https://www.npmjs.com/jobs#frontend-engineer-www-team)
+- [後端工程師](https://www.npmjs.com/jobs#backend-engineer-www-team)
 
-Check out more on the [jobs page](https://www.npmjs.com/jobs).
+在 [職缺頁面](https://www.npmjs.com/jobs) 查看更多。
 
-## visualize your outdated dependencies
+## 視覺化你過期的依賴套件
 
 ![](http://40.media.tumblr.com/e3690e55895a3af59914dc24cbc4e4f9/tumblr_inline_np0ru9w3V31t68bpr_540.png)
 
-Thanks to [Emmanouil Konstantinidis](https://twitter.com/iamemmanouil/status/598504437582278656), you can get a neat visualization of the outdated dependencies in your package.json file with [npm.click](http://npm.click/#/)… and if you’re wondering whether those updates will break your build, try out [next-update](https://www.npmjs.com/package/next-update) to see whether the updates break your tests.
+感謝 [Emmanouil Konstantinidis](https://twitter.com/iamemmanouil/status/598504437582278656)，你可以用 [npm.click](http://npm.click/#/) 得到一個你的 package.json 檔案中過期依賴套件的清楚視覺化… 並且如果你在想是否這些更新會破壞你的建置，可以嘗試 [next-update](https://www.npmjs.com/package/next-update) 來看是否更新會破壞你的測試。
 
-## an interactive cli
+## 互動式的命令列工具
 
 ![](http://38.media.tumblr.com/96bb1a35232e57897442c746008dbb32/tumblr_inline_np0robBYOH1t68bpr_500.gif)
 
-A few weeks ago we showed you how to [build a simple cli](http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm) to manage your deployment process, and we showed you how to add options to your command. If you want to see how to make it really interactive, you can check out the [cut-release](https://github.com/bjoerge/cut-release/blob/master/bin/cut-release.js) project for an example. It uses [inquirer](https://www.npmjs.com/package/inquirer) to prompt the user for options.
+幾個禮拜前我們展示了如何 [建置一個簡單命令列工具](http://blog.npmjs.org/post/118810260230/building-a-simple-command-line-tool-with-npm) 來管理你的開發過程，還有如何添加選項到你的指令。如果你想要了解如何使他可互動，你可以查看 [cut-release](https://github.com/bjoerge/cut-release/blob/master/bin/cut-release.js) 專案作為範例。它使用 [inquirer](https://www.npmjs.com/package/inquirer) 來提示選項給使用者。
 
 原文：[npm Weekly, #18](http://blog.npmjs.org/post/120036339840/npm-weekly-18)，作者：[@npm](http://blog.npmjs.org/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
