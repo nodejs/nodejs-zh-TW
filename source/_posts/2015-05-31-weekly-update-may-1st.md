@@ -1,7 +1,9 @@
 title: "io.js Week of May 1st"
+date: 2015-05-31 16:09:20
 tags:
 categories: iojs 週報
 ---
+
 
 ## io.js 2.0 最終測試版本
 

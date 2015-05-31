@@ -1,7 +1,9 @@
 title: "io.js Week of May 15th"
+date: 2015-05-31 16:09:32
 tags:
 categories: iojs 週報
 ---
+
 ## io.js 新聞
 
 我們很高興宣告 **“io.js 決定加入 Node 基金會”**。組織名稱將改名為 nodejs。
