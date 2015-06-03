@@ -5,9 +5,9 @@ categories: iojs 週報
 ---
 
 
-## io.js 2.0 最終測試版本
+## io.js 2.0 候選版本
 
-這週我們釋出 [v2.0](https://iojs.org/download/nightly/v2.0.0-nightly20150501b4ad5d7050/) 的每日測試版，完整的更新項目在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上。
+這週我們釋出 [v2.0](https://iojs.org/download/nightly/v2.0.0-nightly20150501b4ad5d7050/) 的候選版本，完整的更新項目在很快的就可以在 [Github](https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md) 上看到。
 
 ## 社群更新
 
