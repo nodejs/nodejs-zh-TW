@@ -5,35 +5,35 @@ categories: npm 週報
 
 你希望可以[直接收到](https://www.npmjs.com/npm-weekly) npm 最新更新的消息嗎？
 
-## just hours away from npm@3!
+## 離 npm@3 只剩幾個小時！
 
 ![](http://40.media.tumblr.com/b94cebf75ced4e981031b414bbec3d6e/tumblr_inline_nqisluM4il1t68bpr_500.png)
 
-The eagerly anticipated npm 3 will have an official npm release today (or early tomorrow morning, depending on your time zone).
+熱烈期待 npm 3 將會在今天 (或明早，看你的時區) 有一個官方 npm 釋出。
 
-A few things to note:
+有幾件事情需要注意：
 
-1.  When you use the command `npm install -g npm`, it will still download npm@2 until we’ve moved npm@3 out of beta. You can download the beta using `npm install -g npm@3.0-latest`.
-2.  npm@3 is going to be in beta until we’re comfortable with its stability and the effect of the breaking changes on the community.
-3.  One of those breaking changes is the way `peerDependencies` works. If you have a module that uses peerDependencies, please make sure you understand the changes. We will be writing a blog post about this soon.
+1.  當你使用 `npm install -g npm` 指令，將仍會下載 npm@2 直到我們完成 npm@3 的測試。你可以用 `npm install -g npm@3.0-latest` 下載測試版。
+2.  npm@3 將會測試直到我們滿意他的穩定性和破壞式變更對社群的影響。
+3.  其中一個破壞式變更是 `peerDependencies` 的運作方式。如果你有使用 peerDependencies 的模組，請確認你瞭解變更。我們將會迅速寫一篇有關這個的部落格文章。
 
-If you’re chomping at the bit to find out about all the changes and new features, you can check out the draft [CHANGELOG](https://github.com/npm/npm/blob/multi-stage/CHANGELOG.md).
+如果你等不及要得知所有的變更和新功能，你可以查看 [CHANGELOG](https://github.com/npm/npm/blob/multi-stage/CHANGELOG.md) 的草稿。
 
-## moving towards better front-end support
+## 邁向更好的前端支援
 
-npm is now the registry of choice for many front-end communities, but we still have a way to go before the front-end experience is seamless. We’ve [talked about this](http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging) before, and the changes to peerDependencies were a small step in that direction.
+npm 現在是許多前端社群的 registry 選擇，但我們在前端經驗沒有縫隙之前仍有很長一段路要走。我們已經在之前 [談到這個](http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging)，而且 peerDependencies 的變更是往這個方向的一小步。
 
-[Forrest](https://twitter.com/othiym23), the CLI team lead, will be updating the CLI roadmap to include plans for better support for front-end use cases over the next couple of major releases.
+CLI 團隊的領導者 [Forrest](https://twitter.com/othiym23)，將會更新 CLI 路線圖 在接下來幾個主版本釋加入對前端使用案例有更好的支援的計畫。
 
-In the meantime, folks are playing around with ideas in userland. One that caught our eye recently was [Aria Stewart](https://twitter.com/aredridel)’s [copy-browser-modules](https://www.npmjs.com/package/copy-browser-modules). If you try it out, let us know how it works for you :)
+在這段時間，人們持續思考核心之外的點子。最近其中一個吸引目光的是 [Aria Stewart](https://twitter.com/aredridel) 的 [copy-browser-modules](https://www.npmjs.com/package/copy-browser-modules)。如果你嘗試過，讓我們知道你讓他如何運作 :)
 
-## bonus human
+## 額外的人
 
-We had an avalanche of humans last week and promised another bonus human for this week. The bonus human has arrived! [Chris Dickinson](https://twitter.com/isntitvacant) has joined the registry team. He’ll be spending some of his time tracking down issues in Node that affect the registry (& vice versa). He’ll also be helping us introduce [npm private modules](https://www.npmjs.com/private-modules) support for organizations and teams, which we’re very excited for, and continuing his Node.js contributions.
+我們上星期有大量湧入的人們，而且已承諾這個星期還有另一個額外的人。額外的人已經到了！ [Chris Dickinson](https://twitter.com/isntitvacant) 加入了 registry 團隊。他將會花一些時間追蹤 Node 中影響 registry (還有反過來的狀況) 的問題。他也會幫我們引入 [npm 私有模組](https://www.npmjs.com/private-modules) 對組織和團隊的支援，這使我們非常興奮並持續他對 Node.js 的貢獻。
 
-## npm registry deep dive
+## 深入了解 npm registry 
 
-If you’re interested in finding out more about the registry and how it works, you should check out [CJ](https://twitter.com/ceejbot)’s [registry deep dive](https://www.youtube.com/watch?v=mGh3lW9oAgk) from NodeConf One-Shot Oslo a few weeks ago.
+如果你有興趣了解更多 registry 相關的東西與它如何運作，你應該查看幾個禮拜前 [CJ](https://twitter.com/ceejbot) 在 NodeConf One-Shot Oslo 的 [深入了解 registry](https://www.youtube.com/watch?v=mGh3lW9oAgk)。
 
 
 原文：[npm Weekly, #20](http://blog.npmjs.org/post/122450408965/npm-weekly-20-npm-3-is-here-ish)，作者：[@npm](http://blog.npmjs.org/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
