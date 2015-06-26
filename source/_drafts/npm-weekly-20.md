@@ -1,4 +1,4 @@
-title: "npm 週報 #20 npm 3 is here(-ish)!"
+title: "npm 週報 #20 npm 3 來了!"
 tags:
 categories: npm 週報
 ---
