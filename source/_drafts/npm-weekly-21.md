@@ -19,7 +19,7 @@ categories: npm 週報
 
 我們已經透過 email 警示私有模組的用戶們，萬一你沒有收到，再次通知，上週有個私有模組的安全性議題。私有模組的 Metadata 洩漏，但不包括整包內容以及私人用戶訊息。詳細請見[驗屍](http://status.npmjs.org/incidents/6r2jr0dd9kd5)一文。
 
-##  react podcast 廣播有關 webpack 對上 browserify
+## react podcast 廣播有關 webpack 對上 browserify
 
 如果你正在使用 React.js 元件，你可能會想聽 React Podcast 廣播 [Webpack 對上 Browserify](http://reactpodcast.com/2015/06/webpack-vs-browserify/)，用來管理前端模組相依的工具。長度大約 7 分鐘。
 
