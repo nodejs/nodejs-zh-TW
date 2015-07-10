@@ -1,9 +1,7 @@
 title: "npm 週報 #21 : npm 3 更新 + react.js 元件工具"
-date: 2015-06-26 15:14:32
 tags:
 categories: npm 週報
 ---
-
 
 [Sign up](https://www.npmjs.com/npm-weekly) for the weekly.
 
