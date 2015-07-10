@@ -15,9 +15,9 @@ categories: npm 週報
 
 [Rebecca](https://twitter.com/ReBeccaOrg) [告訴 InfoQ](http://www.infoq.com/news/2015/06/npm) 有關 npm@3，特別是安裝程序的改變將會幫助 Windows 用戶。
 
-## 私有模組的驗屍
+## 私有模組的後續檢視
 
-我們已經透過 email 警示私有模組的用戶們，萬一你沒有收到，再次通知，上週有個私有模組的安全性議題。私有模組的 Metadata 洩漏，但不包括整包內容以及私人用戶訊息。詳細請見[驗屍](http://status.npmjs.org/incidents/6r2jr0dd9kd5)一文。
+我們已經透過 email 警示私有模組的用戶們，萬一你沒有收到，再次通知，上週有個私有模組的安全性議題。私有模組的 Metadata 洩漏，但不包括整包內容以及私人用戶訊息。詳細請見[後續檢視](http://status.npmjs.org/incidents/6r2jr0dd9kd5)一文。
 
 ## react podcast 廣播有關 webpack 對上 browserify
 
