@@ -3,36 +3,36 @@ tags:
 categories: npm 週報
 ---
 
-[Sign up](https://www.npmjs.com/npm-weekly) for the weekly and get it sent to you instead.
+[註冊](https://www.npmjs.com/npm-weekly) weekly 並讓它發送給你來取代。
 
-## game changer of the year
+## 年度的改變遊戲規則者
 
-<figure class="tmblr-full" data-orig-height="595" data-orig-width="600">![](http://40.media.tumblr.com/bdaae3521ca1a5e037e9a6f67ab239b8/tumblr_inline_nri55fyCSp1t68bpr_500.png)</figure>
+![](http://40.media.tumblr.com/bdaae3521ca1a5e037e9a6f67ab239b8/tumblr_inline_nri55fyCSp1t68bpr_500.png)
 
-We’re on the shortlist for the net awards [Game Changer of the Year](https://thenetawards.com/vote/game-changer/)! Thanks to everyone who nominated us.
+我們在 the net awards [年度的改變遊戲規則者](https://thenetawards.com/vote/game-changer/) 的名單上！感謝每個提名我們的人！
 
-## the npm 3 backstory on nodeup
+## nodeup 上有 npm 3 的背景故事
 
-Wondering how we got to npm 3? [Rebecca](https://twitter.com/ReBeccaOrg), [Forrest](https://twitter.com/othiym23), and [Kat](https://twitter.com/maybekatz) give you the full backstory and latest news on the [NodeUp Podcast](https://soundcloud.com/nodeup/89-an-npm-3-show).
+想知道我們是如何走到 npm 3？[Rebecca](https://twitter.com/ReBeccaOrg)、[Forrest](https://twitter.com/othiym23) 和 [Kat](https://twitter.com/maybekatz) 在 [NodeUp Podcast](https://soundcloud.com/nodeup/89-an-npm-3-show)  上給你完整的背景故事和最新消息。
 
-## npm 3 beta testers: upgrade to 3.1.2!
+## npm 3 beta 測試者：請升級到 3.1.2！
 
-It turns out there was a bug in npm@3.1.1 (which made it hard to download modules locally), so Rebecca [released a new version](https://github.com/npm/npm/releases/tag/v3.1.2) out of cycle yesterday. You can upgrade with `npm install -g npm@v3.x-next`.
+原來是有一個 bug 在 npm@3.1.1 (這使它難以在本地下載模組)，所以昨天 Rebecca 跳脫週期[釋出一個新的版本](https://github.com/npm/npm/releases/tag/v3.1.2)。你可以藉由 `npm install -g npm@v3.x-next` 升級。
 
-## speaking of upgrading (windows users)…
+## 談到升級 (windows 使用者)…
 
-If you want to upgrade npm on windows, check out [npm-windows-upgrade](https://github.com/felixrieseberg/npm-windows-upgrade).
+如果你想要在 windows 上升級 npm，請查看 [npm-windows-upgrade](https://github.com/felixrieseberg/npm-windows-upgrade)。
 
-Upgrading npm on Windows requires manual steps to ensure that PowerShell/CMD find the new version of npm. This is a small tool made by Microsoft DX engineers with :heart: for npm and Node, reducing the process to a simple command.
+在 Windows 上升級 npm 需要幾個手動步驟以確保 PowerShell/CMD 找得到新版 npm。這個是 Microsoft DX 工程師為了 npm 和 Node 用 :heart: 做的小工具，把過程簡化成一個簡單指令。
 
-## confused about prepublish?
+## 對 prepublish 感到疑惑？
 
-[Stephan Bönnemann](https://twitter.com/boennemann) [explains the confusion](https://medium.com/@boennemann/what-is-npm-s-prepublish-and-why-is-it-so-confusing-a948373e6be1) around the prepublish lifecycle script and why its quirky behavior is actually more helpful than it may seem.
+[Stephan Bönnemann](https://twitter.com/boennemann) [解釋了](https://medium.com/@boennemann/what-is-npm-s-prepublish-and-why-is-it-so-confusing-a948373e6be1) 圍繞 prepublish 生命週期腳本的疑惑和為什麼它的奇怪行為可能其實比它看起來的更有幫助。
 
-## nodeschool oakland
+## nodeschool 奧克蘭
 
-Want to learn how to Node? Come to the [npm office](https://www.google.com/maps?q=200+Frank+H.+Ogawa+Plaza,+5th+Floor,+Oakland+CA+94612) this weekend to hang out with other learners and mentors at NodeSchool Oakland. Space is limited, so be sure to [sign up](https://ti.to/nodeschool-oakland/july-at-npm).
+想要學習如何寫 Node？這週末在 NodeSchool 奧克蘭來 [npm 辦公室](https://www.google.com/maps?q=200+Frank+H.+Ogawa+Plaza,+5th+Floor,+Oakland+CA+94612)與 其他學習者和導師一起廝混。空間有限，所以請一定要[註冊](https://ti.to/nodeschool-oakland/july-at-npm)。
 
-If you want to follow along from home, you can check out [all of the workshops](http://nodeschool.io/) and download them using npm.
+如果你想要從家裡跟隨，你可以查看[所有的工作坊](http://nodeschool.io/)並藉由 npm 下載它們。
 
 原文：[npm Weekly, #22](http://blog.npmjs.org/post/124107955005/npm-weekly-22-game-changer-of-the-year)，作者：[@npm](http://blog.npmjs.org/)，翻譯 [@iojs-tw](https://github.com/iojs/iojs-tw)，授權 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh_TW)
