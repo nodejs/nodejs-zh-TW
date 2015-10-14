@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>npm 週報 #21 : npm 3 更新 + react.js 元件工具 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-07-10T17:00:49.000Z" itemprop="datePublished">
+          2015-07-10
+      </time>
+    
+</span>
+    <h1 class="post-title">npm 週報 #21 : npm 3 更新 + react.js 元件工具</h1>
+    <section class="post-content">
+      <p><a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">訂閱</a> npm 週報</p>
+<h2 id="npm_3_beta_測試者們">npm 3 beta 測試者們</h2><p>如果你是位 npm@3 beta 測試者，在此通知：下載 npm@3 最新及預備版（next versions）的標籤已經更改。現在請改用 <code>npm@3.x-next</code> 及 <code>npm@3.x-latest</code>。詳細請見 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md" target="_blank" rel="external">CHANGELOG</a>。同樣地，感謝各位給予我們的協助消滅各種臭蟲！</p>
+<p>當 <a href="https://twitter.com/othiym23" target="_blank" rel="external">Forrest</a> 離開，<a href="https://twitter.com/maybekatz" target="_blank" rel="external">Kat</a> 加入許多東西到 npm@2，詳細請見 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v2130-2015-07-02" target="_blank" rel="external">CHANGELOG</a>。</p>
+<h2 id="npm_3_beta_給_windows_用戶帶來好消息">npm 3 beta 給 windows 用戶帶來好消息</h2><p><a href="https://twitter.com/ReBeccaOrg" target="_blank" rel="external">Rebecca</a> <a href="http://www.infoq.com/news/2015/06/npm" target="_blank" rel="external">告訴 InfoQ</a> 有關 npm@3，特別是安裝程序的改變將會幫助 Windows 用戶。</p>
+<h2 id="私有模組的後續檢視">私有模組的後續檢視</h2><p>我們已經透過 email 警示私有模組的用戶們，萬一你沒有收到，再次通知，上週有個私有模組的安全性議題。私有模組的 Metadata 洩漏，但不包括整包內容以及私人用戶訊息。詳細請見<a href="http://status.npmjs.org/incidents/6r2jr0dd9kd5" target="_blank" rel="external">後續檢視</a>一文。</p>
+<h2 id="react_podcast_廣播有關_webpack_對上_browserify">react podcast 廣播有關 webpack 對上 browserify</h2><p>如果你正在使用 React.js 元件，你可能會想聽 React Podcast 廣播 <a href="http://reactpodcast.com/2015/06/webpack-vs-browserify/" target="_blank" rel="external">Webpack 對上 Browserify</a>，用來管理前端模組相依的工具。長度大約 7 分鐘。</p>
+<p>相同主題，<a href="https://twitter.com/linclark" target="_blank" rel="external">Lin</a> 在上個月 jQuerySF 上說明了<a href="https://youtu.be/Tjwm9yPzBGg?t=6913" target="_blank" rel="external">如何在 npm 使用 Browserify（及 Babel）</a>來管理前端模組，並且將會在八月的 <a href="http://www.reactrally.com/" target="_blank" rel="external">React Rally</a> 演講有關 Webpack。</p>
+<h2 id="npm_現在是我的片段資料庫">npm 現在是我的片段資料庫</h2><p><a href="https://twitter.com/sindresorhus" target="_blank" rel="external">Sindre Sorhus</a> 在他的 AMA（問我任何事）說明了他如何使用 npm 作為一種用來<a href="https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328" target="_blank" rel="external">捕獲（capture）他的程式碼片段</a>的方式。</p>
+<p>說明了當你可以 require 它的時後，為何要複製貼上，以及有個清楚意圖的益處。當你在片段中修正一個臭蟲，你只需要更新一個模組，而不是手動修正所有用到片段的地方。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/123564120105/npm-weekly-21-npm-3-updates-react-js" target="_blank" rel="external">npm Weekly, #21</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/07/10/npm-weekly-21/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/07/10/npm-weekly-21/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/07/10/npm-weekly-21/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/07/21/npm-weekly-22/">
+        ← npm 週報 #22 : 年度的改變遊戲規則者
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/06/26/npm-weekly-20/">
+        npm 週報 #20 npm 3 來了! →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

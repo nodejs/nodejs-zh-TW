@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>io.js 週報 2015.02.27 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-03-07T23:07:40.000Z" itemprop="datePublished">
+          2015-03-07
+      </time>
+    
+</span>
+    <h1 class="post-title">io.js 週報 2015.02.27</h1>
+    <section class="post-content">
+      <p><em>注意：版本 <strong>1.4.0</strong> 已經編譯完成並加上標籤但是尚未釋出。在過程中一個 libuv 的臭蟲被發現所以這次的釋出將被棄置，我們將會提升版本號到 1.4.1 以避免造成混淆。</em></p>
+<h2 id="主要更動">主要更動</h2><ul>
+<li><strong>process</strong> / <strong>promises</strong>：每當有 <code>Promise</code> 被回絕而且沒有在 <code>Promise</code> 上附加錯誤處理程式，現在 <code>process</code> 會在該輪的事件迴圈內發出一個 <code>&#39;unhandledRejection&#39;</code> 事件。而每當 <code>Promise</code> 被回絕而且它有附加錯誤處理程式時，現在它會在下一輪事件迴圈發出一個 <code>&#39;rejectionHandled&#39;</code> 事件。  <a href="https://github.com/iojs/io.js/pull/758" target="_blank" rel="external">#758</a> (Petka Antonov)</li>
+<li><strong>streams</strong>：現在可以使用正規的 stream 作為 <code>tls.connect()</code> 的底層 socket <a href="https://github.com/iojs/io.js/pull/926" target="_blank" rel="external">#926</a> (Fedor Indutny)</li>
+<li><strong>http</strong>：當 <code>http.ClientRequest</code> 被客戶端棄置的時候，會發出一個新的 <code>&#39;abort&#39;</code> 事件。 <a href="https://github.com/iojs/io.js/pull/945" target="_blank" rel="external">#945</a> (Evan Lucas)</li>
+<li><strong>V8</strong>：升級 V8 版本到 4.1.0.21。包含一個禁止訪問的修補，當禁止之後被解除時應該可以得到細節的資訊。有一個破壞性的 ABI 變更不會在這次的升級之中，可能會在 io.js 合入 V8 4.2 版本的時候加上去。參閱 <a href="https://github.com/iojs/io.js/pull/952" target="_blank" rel="external">#952</a> 的討論。</li>
+<li><strong>npm</strong>：升級 npm 版本到 2.6.0。包含支援新註冊系統和為了 <code>npm@3</code> 準備的功能。參閱 <a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v260-2015-02-12" target="_blank" rel="external">npm CHANGELOG.md</a> 以了解細節。總結：<ul>
+<li><a href="https://github.com/npm/npm/issues/5068" target="_blank" rel="external">#5068</a> 增加新的登出指令，它對基於 bearer 和 basic 認證的客戶端有幫助。</li>
+<li><a href="https://github.com/npm/npm/issues/6565" target="_blank" rel="external">#6565</a> 提醒 <code>peerDependency</code> 的行為改變了並增加了說明文件。</li>
+<li><a href="https://github.com/npm/npm/issues/7171" target="_blank" rel="external">#7171</a> 提醒 <code>package.json</code> 中的 <code>engineStrict</code> 屬性將會在下一個 npm 主版號移除 (即將到來！)</li>
+</ul>
+</li>
+<li><strong>libuv</strong>：升級版本到 1.4.2。參閱 <a href="https://github.com/libuv/libuv/blob/v1.x/ChangeLog" target="_blank" rel="external">libuv 變更日誌</a> 以了解修補的細節。</li>
+</ul>
+<h1 id="ARM_提供_io-js_在_ARMv8_上的支援">ARM 提供 io.js 在 ARMv8 上的支援</h1><p>ARM 已經聯繫 io.js 建置工作小組的領導者 Rod Vagg，提供他們對 io.js 專案的支援。 ARM 和他們的硬體合作夥伴已經上了軌道讓 ARMv8 成為可運作的伺服器平台，伺服器端 JavaScript 靈活的特性也讓他們完美契合地運行在新的 ARM 上面。</p>
+<p>因為 ARMv8 已經被行動設備製造商採用，新版本的 V8 已經有很好的支援。因為 V8 在 Android 中的角色很關鍵，io.js 非常適合去追蹤它的支援情況，更甚至貢獻給 v8 會讓我們與 V8 團隊有新的關係。</p>
+<p>從 io.js 專案開始的時候，Rod 一直倡導 ARM 對於 io.js、物聯網、愛好者和伺服器使用的角色。我們已經在每次釋出對裝置做 ARMv6 的建置，例如：Raspberry Pi。並且對許多受歡迎的裝置做 ARMv7 的建置 (包括基於 ARM 的雲端平台 Online Labs，也對 io.js 提供幫助)。ARMv8 邏輯繼承這些，但也有令人興奮的潛力來建置伺服器端應用程式，特別是它給予新的 64-bit 支援。</p>
+<p>建置團隊被獲准使用 Linaro ARMv8 伺服器叢集，正在進行跟 io.js CI 平台的整合，這最終應該能導向正規的 ARMv8 二進位檔釋出。</p>
+<h1 id="社群更新">社群更新</h1><ul>
+<li><a href="https://github.com/iojs/io.js/issues/978" target="_blank" rel="external"><strong>和解提案</strong></a>：io.js 著手開始進行對於 Node.js 基金會的和解草案。目前還是初期草案階段，因此來自社群的意見是非常重要的，請大家踴躍反應。</li>
+<li><strong>New internal C++ Streams API</strong>：一個全新的 [C++ Streams API] 在這週增加到 io.js 之中，允許你可以將 TLS stream 包裝成另一個 TLS stream。</li>
+<li><strong>io.js 路徑圖</strong>：<a href="https://github.com/iojs/io.js/blob/v1.x/ROADMAP.md" target="_blank" rel="external">路徑圖</a> 是對 io.js 未來的規劃。它描述關於穩定性策略的規劃以及列出 io.js 的當務之急。</li>
+<li><strong>路徑圖的投影片已經完成等待翻譯</strong>：一系列之於 io.js 路徑圖的投影片已經<a href="https://github.com/iojs/roadmap/issues/18" target="_blank" rel="external">完成可以進行翻譯</a>。你覺得你可以向周遭的群體做簡報嗎？留下你的意見，我們會與你協作幫你預備好簡報！</li>
+<li><strong>Microsoft io.js How-To for Azure Websites</strong>: 微軟 發佈一篇關於他們 Azure 平台的<a href="http://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-iojs/" target="_blank" rel="external">入門教學</a>，描述如何在 Azure 上使用 io.js。</li>
+<li><strong>Floobits moves to io.js</strong>: 配對編程軟體 Floobits <a href="https://news.floobits.com/2015/02/23/on-moving-to-io.js/" target="_blank" rel="external">將他們的平台轉移到 io.js</a>，因為對於 Node 過於緩慢的釋出感到挫折，對於可以開始使用 ES6 的新功能而又不需要增加 <code>--harmony</code> 的參數，他們也覺得從 0.10.0 到 0.12.0 的改動並不是非常明顯。</li>
+<li><strong>Anand Mani Sankar’s <em>Node.js vs io.js: Why the fork?!?</em></strong>: Anand 寫了一篇很不錯也相當客觀的 <a href="http://anandmanisankar.com/posts/nodejs-iojs-why-the-fork/#.VO82hE60PVw.twitter" target="_blank" rel="external">io.js 近期歷史的文章</a>，也提及我們希望藉由 io.js 實現什麼。可以幫助哪些沒有參與到社群之中的人可以瞭解目前的狀況。</li>
+<li><strong>iojs-jp - New io.js Japanese Blog</strong>: iojs-jp 社群建立了<a href="http://blog.iojs.jp/" target="_blank" rel="external">本地化的部落格</a>，用當地的語言來傳遞  io.js 的消息。如果你感興趣，快去看看吧！</li>
+<li><strong>iojs-cn - New io.js Chinese Blog</strong>: 類似於 iojs-jp 社群，iojs-cn 社群也成立了<a href="http://cn.iojs.org/" target="_blank" rel="external">本地化的部落格</a>，用中文來發佈關於 io.js 的文章。如果你對於 iojs-cn 或 iojs 中文新聞感到興趣的話，請不要錯過！</li>
+<li><strong><a href="https://www.youtube.com/watch?v=etI_UD4wXlo" target="_blank" rel="external">檢閱路徑圖投影片</a></strong> - 在釋出前對 io.js 路徑圖簡報的檢閱，確保它有符合專案的目標。</li>
+</ul>
+<h1 id="對_io-js_的支援增加">對 io.js 的支援增加</h1><ul>
+<li><strong><a href="http://wallabyjs.com/" target="_blank" rel="external">Wallby.js</a></strong>，一個 JavaScript 的即時測試函式庫，釋出了 1.0 版本並<a href="http://dm.gl/2015/02/23/wallaby-version-one/" target="_blank" rel="external">增加對 io.js 的支援</a>！</li>
+<li><strong><a href="https://github.com/tmpvar/jsdom" target="_blank" rel="external">jsdom</a></strong>，針對 WHATWG DOM 和 HTML 標準的實作，剛釋出了 <a href="https://github.com/tmpvar/jsdom/blob/master/Changelog.md#400" target="_blank" rel="external">4.0.0 版本</a> 並且加入了 io.js 的依賴需求。</li>
+<li><strong><a href="https://github.com/mmalecki/give" target="_blank" rel="external">give</a></strong> 的作者<a href="https://twitter.com/maciejmalecki/status/569629100215816192" target="_blank" rel="external">發了一則推文</a> 宣布新版的 give 將會增加對 io.js 的支援。Give 是基於 git 的 node.js/io.js 版本控制器。</li>
+<li><strong>Firebase Realtime Client</strong>，Firebase 官方的 web/node.js 客戶端，<a href="https://twitter.com/FirebaseRelease/status/570000737343647744" target="_blank" rel="external">宣布</a> 他們將於 <a href="https://www.firebase.com/docs/web/changelog.html#section-realtime-client" target="_blank" rel="external">2.2.1</a> 開始支援 io.js。</li>
+<li><strong>Semaphore</strong>，提供持續整合服務商，在 <a href="https://semaphoreapp.com/blog/2015/02/17/platform-update-on-february-24th.html?utm_source=twitter&amp;utm_medium=social&amp;utm_content=platform_update_launch&amp;utm_campaign=platformupdate" target="_blank" rel="external">2015/2/24 平台更新</a>中<a href="https://twitter.com/semaphoreapp/status/570987355005431809" target="_blank" rel="external">宣布</a>將會支援 io.js。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-february-17th-9422a589302a" target="_blank" rel="external">io.js Week of February 27th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/03/07/io-js-week-of-february-27th/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/03/07/io-js-week-of-february-27th/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/03/07/io-js-week-of-february-27th/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/03/08/weekly-update-2015-03-06/">
+        ← io.js 週報 2015.03.06
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/03/04/npm-weekly-7/">
+        npm 週報 2015-03-04 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

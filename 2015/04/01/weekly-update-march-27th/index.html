@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>io.js 週報 2015.03.27 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-04-01T15:25:28.000Z" itemprop="datePublished">
+          2015-04-01
+      </time>
+    
+</span>
+    <h1 class="post-title">io.js 週報 2015.03.27</h1>
+    <section class="post-content">
+      <h2 id="io-js_1-6-2_釋出">io.js 1.6.2 釋出</h2><p>這週我們有一個新版本釋出 <a href="https://iojs.org/dist/v1.6.2/" target="_blank" rel="external">v1.6.2</a>，完整的更新日誌可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 找到。</p>
+<h2 id="值得注意的更動">值得注意的更動</h2><ul>
+<li><strong>Windows:</strong> 再一次，進行中改善可以在測試案例看到結果。如同 v1.4.2 更新日誌，CI 系統及設定問題阻礙了 Windows 測試正確地回報結果，這個問題及代碼似乎已經完全解決。</li>
+<li><strong>FreeBSD:</strong> 一個影響 io.js/Node.js 的<a href="https://lists.freebsd.org/pipermail/freebsd-current/2015-March/055043.html" target="_blank" rel="external">核心臭蟲</a>已經被<a href="https://github.com/joyent/node/issues/9326" target="_blank" rel="external">發掘</a>且修補已經出爐避免io.js被影響（Fedor Indutny）<a href="https://github.com/iojs/io.js/pull/1218" target="_blank" rel="external">#1218</a>。</li>
+<li><strong>module:</strong> 現在你可以用 <code>require(&#39;.&#39;)</code> 來取代 <code>require(&#39;./&#39;)</code>，這個考慮是個臭蟲修補（Michaël Zasso）<a href="https://github.com/iojs/io.js/pull/1185" target="_blank" rel="external">#1185</a>。</li>
+<li><strong>v8:</strong> 更新到 4.1.0.25 包含— <code>max_old_space_size</code> 數值大於 4096 及支援 Solaris，兩者都已經包含在 io.js。</li>
+</ul>
+<h2 id="已知問題">已知問題</h2><ul>
+<li>有個微小的記憶體洩漏可能仍然存在，但是已經是適當地被識別出來，詳細請見 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</li>
+<li>REPL 的代理配對會導致終端凍結 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></li>
+<li>io.js 不可能編譯成靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></li>
+<li><code>process.send()</code> 如同文件所建議並非同步，在 1.0.2 版新增了回歸，請見 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a> 及修改 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a></li>
+<li>當某個DNS查詢正在處理中，呼叫 <code>dns.setServers()</code> 會導致程序崩潰在某個失敗的斷言 <a href="https://github.com/iojs/io.js/issues/894" target="_blank" rel="external">#894</a></li>
+</ul>
+<h2 id="社群更新">社群更新</h2><ul>
+<li>Node.js 技術管理草案已經提出，可以在這裡<a href="https://github.com/joyent/nodejs-advisory-board/pull/30" target="_blank" rel="external">觀看</a>。</li>
+<li>Microsoft Visual Studio 團隊釋出了 Node.js Tools 1.0 for Visual Studio，這次釋出包含豐富的編輯器、代碼補完、互動視窗、進階除錯及效能評測。請見<a href="http://blogs.msdn.com/b/visualstudio/archive/2015/03/25/node-js-tools-1-0-for-visual-studio.aspx" target="_blank" rel="external">公告</a>。</li>
+<li><a href="http://blog.sematext.com/2015/03/30/nodejs-iojs-monitoring/" target="_blank" rel="external">SPM 監控支援 node.js 及 io.js</a>，監控可加入效能監測、通知及異常偵測。</li>
+</ul>
+<h2 id="即將舉行的活動">即將舉行的活動</h2><ul>
+<li><a href="http://nodeconf.com/" target="_blank" rel="external">NodeConf</a> 的門票已經開始販售，6/8-9 於加州奧克蘭，NodeConf Adventure 則是 6/11-14 於加州沃克溪農場。</li>
+<li><a href="http://2015.cascadiajs.com/" target="_blank" rel="external">CascadiaJS</a> 門票開賣，時間是 7/8~7/10 於華盛頓州。</li>
+<li><a href="http://nodeconf.eu/" target="_blank" rel="external">NodeConf EU</a> 門票開賣，時間是 9/6~9/9 於愛爾蘭瓦特福。</li>
+<li><a href="http://nodejs.connpass.com/event/13182/" target="_blank" rel="external">nodeSchool 東京</a> 將會在 4/12 於日本東京舉辦。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-march-27th-9555f36bbb9a" target="_blank" rel="external">io.js Week of March 27th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/04/01/weekly-update-march-27th/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/04/01/weekly-update-march-27th/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/04/01/weekly-update-march-27th/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/04/04/npm-weekly-10/">
+        ← npm 週報 2015-03-31
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/03/20/weekly-update-march-20th/">
+        io.js 週報 2015.03.20 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

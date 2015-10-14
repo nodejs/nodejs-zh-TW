@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>io.js 週報 - 2015.02.06 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-02-06T20:46:25.000Z" itemprop="datePublished">
+          2015-02-06
+      </time>
+    
+</span>
+    <h1 class="post-title">io.js 週報 - 2015.02.06</h1>
+    <section class="post-content">
+      <p><a href="https://atom.io/" target="_blank" rel="external">Atom</a> &amp; <a href="http://nwjs.io/" target="_blank" rel="external">nw.js</a> 開始採用 io.js， Linux Tracing .. 等等。</p>
+<p>每周五我們都會發布關於 io.js 的最新發展。</p>
+<p>回顧整個一月份的社群貢獻，io.js 共有 294 次提交，是 Node 近三年來第三活躍的月份，（2012 年 2 月份有 308 次提交）。隨著社群貢獻的成長，預計二月份會有更多產出。</p>
+<ol>
+<li>發布 <a href="https://iojs.org/dist/v1.1.0/" target="_blank" rel="external">v1.1.0</a>，詳細資訊請參考<a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md#2015-02-03-version-110-chrisdickinson" target="_blank" rel="external">更新紀錄</a>。</li>
+<li>Sam Newman lands <a href="https://github.com/iojs/io.js/commit/50daee7243a3f987e1a28d93c43f913471d6885a" target="_blank" rel="external">簡化了 Stream 建構方法</a>。</li>
+<li>正在進行 <a href="https://github.com/iojs/io.js/pull/702" target="_blank" rel="external">加入 <strong>Linux Tracing</strong> (LTTNG) 的工作</a>。</li>
+<li>隨著我們加強在 io.js debugging 工作，<a href="https://github.com/iojs/io.js/issues/671#issuecomment-73191538" target="_blank" rel="external">Google 分享了部分在 V8 和 Chrome 中應用的追蹤技術</a>。</li>
+<li><a href="http://docs.travis-ci.com/user/build-environment-updates/2015-02-03/" target="_blank" rel="external"><strong>Travis CI</strong> 增加了 io.js 的支援</a>。</li>
+<li><a href="https://codeship.com/documentation/languages/nodejs/#iojs" target="_blank" rel="external"><strong>Codeship</strong> 支持 io.js</a>。</li>
+<li><a href="https://github.com/atom/atom/releases/tag/v0.177.0" target="_blank" rel="external"><strong>Atom 編輯器</strong>轉移到 io.js</a>。</li>
+<li><a href="https://github.com/nwjs/nw.js/issues/2742" target="_blank" rel="external"><strong>nw.js</strong>（前身是 <strong>node-webkit</strong>）轉移到 io.js</a>。</li>
+<li><strong>Tessel</strong> 硬體新產品<a href="http://blog.technical.io/post/110115579867/upcoming-hardware-from-technical-machine" target="_blank" rel="external">將支援 io.js</a>。</li>
+<li>Chris Dickinson 增加了 <a href="https://github.com/iojs/io.js/issues/680#issuecomment-73089691" target="_blank" rel="external">6 位新的貢獻者</a>，活躍的貢獻者目前<strong>共有 23 名</strong>。</li>
+<li>正在制定<a href="https://github.com/iojs/io.js/issues/725" target="_blank" rel="external">穩定及相容性策略</a>，歡迎踴躍參加。</li>
+<li>我們開始<a href="https://github.com/iojs/roadmap/issues/13" target="_blank" rel="external">接受各大公司的回饋意見</a>。如果您有我們遺漏掉的的公司的聯絡方式，請告知我們。</li>
+<li>下週舉行 <a href="http://nodesummit.com/" target="_blank" rel="external"><strong>Node summit</strong></a>，將會有許多演講和與會者。</li>
+<li><a href="https://www.youtube.com/watch?v=IhXa2FmtBI4" target="_blank" rel="external">技術委員週會</a>。</li>
+<li><a href="https://www.youtube.com/watch?v=SBJaXUA0lSY" target="_blank" rel="external">網站工作群組會議</a>。</li>
+<li><a href="https://www.youtube.com/watch?v=Oar2yB5SPtA" target="_blank" rel="external">追蹤工作會議</a>。</li>
+</ol>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-february-6th-2015-e185388549a4" target="_blank" rel="external">io.js Week of February 6th 2015</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/02/06/weekly/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/02/06/weekly/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/02/06/weekly/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/02/12/io-js-and-node-js-foundation/">
+        ← io.js 和 node.js 基金會
+    </a>
+    
+    <span class="page-number">•</span>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

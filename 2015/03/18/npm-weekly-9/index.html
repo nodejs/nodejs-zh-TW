@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>npm 週報 #9 2015-03-17 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-03-18T13:48:04.000Z" itemprop="datePublished">
+          2015-03-18
+      </time>
+    
+</span>
+    <h1 class="post-title">npm 週報 #9 2015-03-17</h1>
+    <section class="post-content">
+      <p>本週的 npm 最新消息，同樣也<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">可以透過 email 訂閱</a>。</p>
+<h2 id="一個暫行性的_CLI_小問題">一個暫行性的 CLI 小問題</h2><p>只是一個小小的通知，給有使用<code>npm shrinkwrap --dev</code>的使用者，在上週的<code>npm@next</code>版本中(即<code>2.7.2</code>版)，這個指令有個<a href="https://github.com/npm/npm/issues/7641" target="_blank" rel="external">次要的臭蟲</a>。<a href="https://twitter.com/othiym23" target="_blank" rel="external">弗里斯特</a>馬上進行修補並且標上了新的<code>npm@next</code>標籤。感謝 <a href="https://twitter.com/dan_abramov" target="_blank" rel="external">dan_abramov</a> 回報了這個非常有幫助的問題以及對<code>npm@next</code>的測試。</p>
+<p>如果你不知道什麼是<code>npm@next</code>，它是一個 npm 版本，將會在該版本的下一週釋出成穩定版，而該穩定版會標上<code>npm@latest</code>的標籤。當你執行了<code>npm install -g npm</code>，你會取得<code>npm@latest</code>版本。但如果你想要成為測試者，試用最新的功能，確保它是的確穩定的版本，那你可以使用<code>npm install -g npm@next</code>來取得。我們 &lt;3 測試者。</p>
+<h2 id="npm@3_將會帶來什麼？">npm@3 將會帶來什麼？</h2><p>說到<code>npm shrinkwrap</code>，在<code>npm@3</code>中，使用 shrinkwrap 會更加方便。當你在專案目錄下安裝或移除某個模組時，加上<code>--save</code>參數， npm 將會為你自動更新<code>npm-shrinkwrap.json</code>。只要你都是使用 npm 指令來管理你在 <code>package.json</code> 裡的相依性（而不是手動編修檔案），<code>npm-shrinkwrap.json</code>將會自動同步。</p>
+<h2 id="來自社群">來自社群</h2><p><img src="https://41.media.tumblr.com/ae98f831f1080fb615e590134b13fd71/tumblr_inline_nld81cxuvF1t68bpr_500.png" alt=""></p>
+<p>你是否曾經遇過，同時撰寫一種應用程式以及一種模組，而該應用程式同時也使用了該模組？你是否使用 <code>npm link</code>來做這件事？如果沒有，你可能會想看看 egghead.io 影片，<a href="https://egghead.io/lessons/node-js-using-npm-link-to-use-node-modules-that-are-in-progress" target="_blank" rel="external">使用 npm link 來使用”開發中”的 node 模組</a></p>
+<p><a href="https://twitter.com/bclinkinbeard" target="_blank" rel="external">Ben Clinkinbeard</a>，該影片的拍攝者，同時也是 PR 背後的作者，讓最近釋出的 <a href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#1314-instantaneous-browserification-2015-02-24" target="_blank" rel="external">Angular 1.3.14 instantaneous-browserification</a> 能夠與 Browserify 更好的結合。所以，感謝 Ben！</p>
+<h2 id="預先收集的集合">預先收集的集合</h2><p>我們正在規劃 npm 的一個新功能，稱之為集合（原文 collections）。這將會是由用戶撰寫的指南，告訴你如何在一個漂亮的佈局下同時使用多個 packages。</p>
+<p>在此期間，人們正在製作他們自己的集合。<a href="https://twitter.com/zeke" target="_blank" rel="external">Zeke</a> 已經收集了<a href="https://github.com/npm/newww/issues/313" target="_blank" rel="external">一堆集合</a>，看看人們做了些什麼。如果你也有集合，歡迎告訴我們，你也可能會想要看看其他人的集合，他們非常整齊漂亮。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/113882628280/npm-weekly-9" target="_blank" rel="external">npm weekly, #9</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/03/18/npm-weekly-9/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/03/18/npm-weekly-9/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/03/18/npm-weekly-9/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/03/20/weekly-update-march-20th/">
+        ← io.js 週報 2015.03.20
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/03/15/weekly-update-march-13th/">
+        io.js 週報 2015.03.13 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

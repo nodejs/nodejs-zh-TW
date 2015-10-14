@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>io.js 週報 2015.03.06 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-03-08T19:22:51.000Z" itemprop="datePublished">
+          2015-03-08
+      </time>
+    
+</span>
+    <h1 class="post-title">io.js 週報 2015.03.06</h1>
+    <section class="post-content">
+      <p>Buffer.indexOf()、Tessel 2 以及更多消息。</p>
+<h1 id="io-js_1-5-0_釋出">io.js 1.5.0 釋出</h1><p><a href="https://github.com/rvagg" target="_blank" rel="external">@rvagg</a> 在 3/6（五）釋出了 io.js <a href="https://iojs.org/dist/latest/" target="_blank" rel="external">v1.5.0</a>。可以在 <a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md" target="_blank" rel="external">Github</a> 上找到完整的變更日誌。</p>
+<h2 id="主要更動">主要更動</h2><ul>
+<li><p><strong>buffer:</strong> 提供 Buffer#indexOf() 方法，啟發自 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank" rel="external">Array#indexOf</a>。接受 String、Buffer 以及 Number 型態。Strings 將視為 UTF8。 (Trevor Norris) <a href="https://github.com/iojs/io.js/pull/561" target="_blank" rel="external">#561</a></p>
+</li>
+<li><p><strong>fs:</strong> 「fs」 的方法不再對 options 物件屬性執行 hasOwnProperty() 檢查，以允許 options 物件擁有 apply prototype 的屬性。 (Jonathan Ong) #635</p>
+</li>
+<li><p><strong>tls:</strong> 一個由 PayPal 回報，可能是 TLS 記憶體洩漏的問題。近期對於 <strong>stream_wrap</strong> 的更動可能造成問題。問題回報於 <a href="https://github.com/iojs/io.js/pull/1078" target="_blank" rel="external">#1078</a>，你可以在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a> 得知目前的進展。(Fedor Indutny)</p>
+</li>
+<li><p><strong>npm:</strong> npm 升級至 2.7.0，細節請參閱<a href="https://github.com/npm/npm/blob/master/CHANGELOG.md#v270-2015-02-26" target="_blank" rel="external">更新項目</a>，其中解釋了為什麼這個原本可能是主要版號升級變成了次要版號。</p>
+</li>
+<li><p><strong>TC:</strong> Colin Ihrig (@cjihrig) 從 TC 退出，因為他希望可以放更多心力在程式撰寫上並減少開會時間。</p>
+</li>
+</ul>
+<h2 id="已知的問題">已知的問題</h2><ul>
+<li><p>可能與 TLS 相關的記憶體洩漏，細節請參閱 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</p>
+</li>
+<li><p>Windows 仍舊有使用者回報存在一些測試錯誤的情形，我們正優先追查這些問題的原因。細節請參閱 <a href="https://github.com/iojs/io.js/issues/1005" target="_blank" rel="external">#1005</a>。</p>
+</li>
+<li><p>在 REPL 中代理對 (Surrogate pair) 會凍結終端 <a href="https://github.com/iojs/io.js/issues/690" target="_blank" rel="external">#690</a></p>
+</li>
+<li><p>不能編譯 io.js 為靜態函式庫 <a href="https://github.com/iojs/io.js/issues/686" target="_blank" rel="external">#686</a></p>
+</li>
+<li><p>1.0.2 重新加入的 process.send() 不如文件上所說為同步地，參閱 <a href="https://github.com/iojs/io.js/issues/760" target="_blank" rel="external">#760</a>  和 <a href="https://github.com/iojs/io.js/issues/774" target="_blank" rel="external">#774</a> 的修補</p>
+</li>
+</ul>
+<h1 id="社群消息">社群消息</h1><ul>
+<li><p>聽到 io.js 與 最新版 node.js 沒有受 <a href="https://freakattack.com/" target="_blank" rel="external">FREAK Attack</a> 影響，應該鬆一口氣吧。你正使用著 io.js 或最新版的 node.js 對吧？</p>
+</li>
+<li><p>Walmart 贊助了建構的機器來運行 io.js Jenkins 持續整合系統。<a href="https://github.com/orgs/iojs/teams/build" target="_blank" rel="external">@iojs/build</a> 團隊開始著手進行 SunOS 版本（正如你可以從 node.js 取得的一樣）。不過在此之前，有一個 V8 的臭蟲（<a href="https://github.com/iojs/io.js/pull/1079" target="_blank" rel="external">iojs/io.js#1079</a>）必須要先修復。</p>
+</li>
+<li><p>此外，我們也在此感謝以下的企業，對於 io.js 提供硬體以及相關的技術/支援/工程師的協助：</p>
+</li>
+<li><p>Digital Ocean (主要是 Linux) Rackspace (主要是 Windows) Voxer (OS X 和 FreeBSD) NodeSource (ARMv6 &amp; ARMv7) Linaro (ARMv8) Walmart (SmartOS / Solaris)</p>
+</li>
+<li><p>io.js 社群很努力的進行本地化的工作。目前有超過 20 種語系內容發佈到 <a href="http://iojs.org/" target="_blank" rel="external">io.js.org</a> 以及 i18n 社群網站上。此外，i18n 的連結也已經加到網站的頁面底部便與使用。你懷念自己的語系嗎？<a href="https://github.com/iojs/website/blob/master/TRANSLATION.md" target="_blank" rel="external">來協助我們吧！</a></p>
+</li>
+<li><p>既然提到翻譯，io.js <a href="http://roadmap.iojs.org/" target="_blank" rel="external">路徑圖的簡報</a>已經更新並加上其中語系的連結。</p>
+</li>
+<li><p>PayPal 做了一個實驗來比較 <a href="https://www.npmjs.com/package/kappa" target="_blank" rel="external">Kappa</a> 運行在 io.js、node.js 0.12，以及 node.js 0.10。PayPal 團隊也發現了可能造成記憶體洩漏的問題。一開始的問題回報在 <a href="https://github.com/iojs/io.js/pull/1078" target="_blank" rel="external">#1078</a>，後續的處理在 <a href="https://github.com/iojs/io.js/issues/1075" target="_blank" rel="external">#1075</a>。</p>
+</li>
+<li><p><a href="http://nodesource.com/" target="_blank" rel="external"><strong>NodeSource</strong></a> 開始提供 Ubuntu/Debian 的<a href="https://nodesource.com/blog/nodejs-v012-iojs-and-the-nodesource-linux-repositories" target="_blank" rel="external">程式包</a>，正如給 RHEL/Fedora 一樣。</p>
+</li>
+<li><p>io.js <a href="https://registry.hub.docker.com/u/library/iojs/" target="_blank" rel="external">Docker版本</a>，是一、二月中，十三個新加入的 <a href="http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/" target="_blank" rel="external">Docker 官方容器</a>的其中之一。</p>
+</li>
+<li><p>NodeBots 以及 IoT 的人們應該會很高興聽到這個剛發佈的消息 - <a href="http://blog.technical.io/post/112787427217/tessel-2-new-hardware-for-the-tessel-ecosystem" target="_blank" rel="external"><strong>Tessel2</strong></a> 將<a href="http://blog.technical.io/post/112888410737/moving-faster-with-io-js" target="_blank" rel="external">原生支援 io.js</a>。</p>
+</li>
+<li><p><a href="https://twitter.com/maxbeatty" target="_blank" rel="external"><strong>@maxbeatty</strong></a> 正忙於建置新版的 <a href="http://jsperf.com/" target="_blank" rel="external">jsperf.com</a> 後端，運行於 io.js 以及完全開放原始碼。歡迎貢獻者！</p>
+</li>
+<li><p>部落格: @eranhammer 寫了一篇名為 <a href="http://hueniverse.com/2015/03/02/the-node-version-dilemma/" target="_blank" rel="external">The Node Version Dilemma</a> 的文章，其中討論了許多不同版本的 node.js / io.js，建議該使用哪個版本及在何時使用。</p>
+</li>
+</ul>
+<h1 id="對_io-js_的支援增加">對 io.js 的支援增加</h1><ul>
+<li><a href="https://npmjs.com/scrypt" target="_blank" rel="external"><strong>scrypt</strong></a> 已經支援 io.js，細節可以參閱這個 <a href="https://github.com/barrysteyn/node-scrypt/issues/39" target="_blank" rel="external">Github Issue</a>。</li>
+<li><a href="https://github.com/thlorenz/proxyquire" target="_blank" rel="external"><strong>proxyquire</strong></a> 發佈 v1.3.2 並支援 iojs。</li>
+</ul>
+<p>原文：<a href="https://medium.com/node-js-javascript/io-js-week-of-march-6th-2f9344688277" target="_blank" rel="external">io.js Week of March 6th</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/03/08/weekly-update-2015-03-06/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/03/08/weekly-update-2015-03-06/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/03/08/weekly-update-2015-03-06/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/03/12/npm-weekly-8/">
+        ← npm 週報 2015-03-10
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/03/07/io-js-week-of-february-27th/">
+        io.js 週報 2015.02.27 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

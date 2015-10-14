@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>打造一個更好的 Node 社群 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-05-05T00:45:52.000Z" itemprop="datePublished">
+          2015-05-05
+      </time>
+    
+</span>
+    <h1 class="post-title">打造一個更好的 Node 社群</h1>
+    <section class="post-content">
+      <p><img src="https://d262ilb51hltx0.cloudfront.net/max/1000/1*bupWLg7JyqowFbDYltlXFQ.jpeg" alt=""></p>
+<p>在早些日子，事情是比較簡單的。很少人依賴 Node，也很少人使用它，甚至更少人用 Node 來工作。</p>
+<p>當發生一個大問題時，我們六個人就會提出來討論。這個團隊沒什麼優點，就只是大家在一起討論而已。它既不民主，也不開源。而且顯而易見的，團隊不會持續著很久。我想稱呼他為「Node Illuminati」。我堅持。</p>
+<p>我們討論出了早期的 Buffers 和 Streams，並且持續進行了幾個月。這個核心團隊變得更國際化了。「Node Illuminati」並沒有跟著擴充。</p>
+<p>我去參加了一個論壇，接著我們發現到 Node 變得越來越龐大。接著我去了另外一個更接近「Illuminati」的論壇，當然這個論壇遠遠超過六個人。我們再次想通了 Streams，至少我們這樣認為。</p>
+<p>一年過去了。我又去了另外一個論壇。我們發現到 Node 已經相當龐大了。在 Node core 的工作對比於模組，真是黯然失色。我嘗試在其他的論壇談一些 Node core 的東西，但是還是失敗了。但我遇到了 Raquel，而且 Chris 說服她用 Node 來做機器人，所以我想這也算是一次成功了吧。</p>
+<p>我們認為模組已經足夠小到讓一個人來運作。模組後來又變得更小了，小到一個人可以寫幾百個模組，這遠遠超過他們所能維護的範圍。</p>
+<p>我加入了幾個貢獻者到<a href="https://github.com/request/request" target="_blank" rel="external">request</a>專案裡面，他們做了一些相當好的貢獻。但後來他們就消失不見了，所以我接著做了大部分的工作。</p>
+<p>Rod 發現了更好的方式來管理專案。Git 在”移除”工作上做得相當好。要知道，讓人們對專案作出貢獻是很難的，但當你給了他們專案的管理權後，他們會出更多的貢獻。即使有人搞雜了一些東西，Git 在後續處理上相當容易。</p>
+<p>我把所有對專案有貢獻的人變成協作者。我並沒有把這樣的內容寫下來成為一個政策。我並沒有針對自己的內容送 pull request。我做出這些決定並沒有蒐集或尋求誰的回饋。我加入更多對專案有貢獻的人成為協作者。然後，他們又消失了。我繼續接著做了大部分的工作。</p>
+<p>當你不寫文件時，你靠的是文化的規範。當你的文化都很像，也就意味著你沒有辦法吸引不在這個文化內的人們。當你在掌控這些事情的時候，即使你說你不是獨裁者，但也很難說服人了。人們都不喜歡獨裁的人，他們會傾向離開或反抗。</p>
+<p>於是我寫下了貢獻的政策。我把自己的內容送了 pull request。我開始向其他的貢獻者尋求回饋。令人驚喜的事情發生了，不管是已經加入或是新加入的人都有更多的貢獻。他們貢獻更多，也持續關注在這個專案上。</p>
+<p>Substack 寫了教學手冊。Rod 和 Tim 很喜歡這份手冊，所以他們用相同的格式寫了更多的教學手冊。Max 和 Brian 把所有的教學手冊放到網站上，並且建立了一個 repository 讓需要的人們可以隨時取得。這個專案叫做 NodeSchool，一直持續到現在。</p>
+<p>我詢問有沒有人想要舉行在地化的 NodeSchool 活動，並且分享他們從參與者身上學到的東西。這些活動比我參加過的任何活動成長的都快，但終究遇到了瓶頸。</p>
+<p>Max 和 Jessica 寫下了 NodeSchool 的<a href="http://nodeschool.io/about.html" target="_blank" rel="external">理念</a>、<a href="http://nodeschool.io/building-workshops.html" target="_blank" rel="external">如何舉辦一個新的 workshop</a>和 <a href="https://github.com/nodeschool/organizers/blob/master/README.md#how-to-start-a-new-nodeschool-chapter" target="_blank" rel="external">如何舉辦更多的活動</a>。我們讓每一個活動的籌辦者變成 <a href="https://github.com/nodeschool" target="_blank" rel="external">NodeSchool</a> 的共同擁有者。我們讓<a href="https://github.com/nodeschool/organizers/blob/master/README.md#3" target="_blank" rel="external">每個參加活動的參與者變成活動的所有人</a>。<a href="http://nodeschool.io/chapters.html" target="_blank" rel="external">NodeSchool 再一次成長</a>。</p>
+<p>人們可以做的事情並不如理論上的廣範與開闊。人們是可以把事情做好的，當你把事情清楚且明確的告訴他們可以做什麼，會有更多人投入。他們不會像你一樣，當所有沒有被寫下來的假設，都會變成一種阻礙。當人們跟你越不一樣，這些阻礙會變得越來越多，然後當這些人們跟你的出生背景不一樣，或是跟你不在一個社會階級時，阻礙就會越來越多。</p>
+<p>人們喜歡做他們屬於自己的工作，而這樣的所有權是可以被分享的。同樣的需要有責任感。如果你放棄自己的專屬所有權，如果你把事情寫下來，如果你明確的告訴大家該如何參與，你會成長的，同時，你的工作會比你自己擁有一切變得更佳美好。</p>
+<p>原文：<a href="https://medium.com/node-js-javascript/building-a-better-node-community-3f8f45b45cb5" target="_blank" rel="external">Building a Better Node Community.</a>，作者：<a href="https://medium.com/@iojs" target="_blank" rel="external">@iojs</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/05/05/building-a-better-node-community/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/05/05/building-a-better-node-community/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/05/05/building-a-better-node-community/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/05/17/npm-weekly-15/">
+        ← npm 週報 #15
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/04/30/npm-weekly-14/">
+        npm 週報 #14 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

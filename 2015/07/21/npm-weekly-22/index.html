@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>npm 週報 #22 : 年度的改變遊戲規則者 | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-07-21T21:24:40.000Z" itemprop="datePublished">
+          2015-07-21
+      </time>
+    
+</span>
+    <h1 class="post-title">npm 週報 #22 : 年度的改變遊戲規則者</h1>
+    <section class="post-content">
+      <p><a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">註冊</a> weekly 並讓它發送給你來取代。</p>
+<h2 id="年度的改變遊戲規則者">年度的改變遊戲規則者</h2><p><img src="http://40.media.tumblr.com/bdaae3521ca1a5e037e9a6f67ab239b8/tumblr_inline_nri55fyCSp1t68bpr_500.png" alt=""></p>
+<p>我們在 the net awards <a href="https://thenetawards.com/vote/game-changer/" target="_blank" rel="external">年度的改變遊戲規則者</a> 的名單上！感謝每個提名我們的人！</p>
+<h2 id="nodeup_上有_npm_3_的背景故事">nodeup 上有 npm 3 的背景故事</h2><p>想知道我們是如何走到 npm 3？<a href="https://twitter.com/ReBeccaOrg" target="_blank" rel="external">Rebecca</a>、<a href="https://twitter.com/othiym23" target="_blank" rel="external">Forrest</a> 和 <a href="https://twitter.com/maybekatz" target="_blank" rel="external">Kat</a> 在 <a href="https://soundcloud.com/nodeup/89-an-npm-3-show" target="_blank" rel="external">NodeUp Podcast</a>  上給你完整的背景故事和最新消息。</p>
+<h2 id="npm_3_beta_測試者：請升級到_3-1-2！">npm 3 beta 測試者：請升級到 3.1.2！</h2><p>原來是有一個 bug 在 npm@3.1.1 (這使它難以在本地下載模組)，所以昨天 Rebecca 跳脫週期<a href="https://github.com/npm/npm/releases/tag/v3.1.2" target="_blank" rel="external">釋出一個新的版本</a>。你可以藉由 <code>npm install -g npm@v3.x-next</code> 升級。</p>
+<h2 id="談到升級_(windows_使用者)…">談到升級 (windows 使用者)…</h2><p>如果你想要在 windows 上升級 npm，請查看 <a href="https://github.com/felixrieseberg/npm-windows-upgrade" target="_blank" rel="external">npm-windows-upgrade</a>。</p>
+<p>在 Windows 上升級 npm 需要幾個手動步驟以確保 PowerShell/CMD 找得到新版 npm。這個是 Microsoft DX 工程師為了 npm 和 Node 用 :heart: 做的小工具，把過程簡化成一個簡單指令。</p>
+<h2 id="對_prepublish_感到疑惑？">對 prepublish 感到疑惑？</h2><p><a href="https://twitter.com/boennemann" target="_blank" rel="external">Stephan Bönnemann</a> <a href="https://medium.com/@boennemann/what-is-npm-s-prepublish-and-why-is-it-so-confusing-a948373e6be1" target="_blank" rel="external">解釋了</a> 圍繞 prepublish 生命週期腳本的疑惑和為什麼它的奇怪行為可能其實比它看起來的更有幫助。</p>
+<h2 id="nodeschool_奧克蘭">nodeschool 奧克蘭</h2><p>想要學習如何寫 Node？這週末在 NodeSchool 奧克蘭來 <a href="https://www.google.com/maps?q=200+Frank+H.+Ogawa+Plaza,+5th+Floor,+Oakland+CA+94612" target="_blank" rel="external">npm 辦公室</a>與 其他學習者和導師一起廝混。空間有限，所以請一定要<a href="https://ti.to/nodeschool-oakland/july-at-npm" target="_blank" rel="external">註冊</a>。</p>
+<p>如果你想要從家裡跟隨，你可以查看<a href="http://nodeschool.io/" target="_blank" rel="external">所有的工作坊</a>並藉由 npm 下載它們。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/124107955005/npm-weekly-22-game-changer-of-the-year" target="_blank" rel="external">npm Weekly, #22</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/07/21/npm-weekly-22/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/07/21/npm-weekly-22/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/07/21/npm-weekly-22/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/08/23/npm-weekly-25/">
+        ← npm 週報 #24 : dist-tag, talking to Microsoft, semicolon trolling
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/07/10/npm-weekly-21/">
+        npm 週報 #21 : npm 3 更新 + react.js 元件工具 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

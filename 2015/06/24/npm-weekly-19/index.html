@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>npm 週報 #19 npm is massive + new lifecycle events | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-06-24T22:35:11.000Z" itemprop="datePublished">
+          2015-06-24
+      </time>
+    
+</span>
+    <h1 class="post-title">npm 週報 #19 npm is massive + new lifecycle events</h1>
+    <section class="post-content">
+      <p>你希望可以<a href="https://www.npmjs.com/npm-weekly" target="_blank" rel="external">直接收到</a> npm 最新更新的消息嗎？</p>
+<h2 id="npm_是龐大的">npm 是龐大的</h2><p><img src="http://38.media.tumblr.com/4c617284c1b80a823a29f8833f69e62c/tumblr_inline_nq45wnrjGF1t68bpr_540.gif" alt=""></p>
+<p><a href="https://unpm.nodesource.com/" target="_blank" rel="external">了解 npm</a> 使我們大吃一驚，<a href="https://twitter.com/hughskennedy" target="_blank" rel="external">Hugh Kennedy</a> 把 NodeSource 的 <a href="https://nodesource.com/nsight" target="_blank" rel="external">N|Sight</a> 專案放在一起做成的視覺化… 還有這是 <a href="https://twitter.com/dshaw" target="_blank" rel="external">Dan Shaw</a> 對它的解釋：<a href="https://medium.com/@nodesource/npm-is-massive-2bdd9417591c" target="_blank" rel="external">npm 是龐大的</a>。</p>
+<h2 id="CLI_有什麼新功能？">CLI 有什麼新功能？</h2><p>我們已經有幾個禮拜沒有出週報，所以我們沒有提到新的生命週期掛鉤，preversion 與 postversion。無論何時你輸入 npm version 來跳升你的 package.json 檔案中的版本號並在 git 添加 tag，任何你定義在 package.json 的 preversion <a href="https://docs.npmjs.com/misc/scripts" target="_blank" rel="external">套件腳本</a>將會被預先執行且 postversion 將會在之後被執行。</p>
+<p>這將會對一些事情特別方便，例如：在釋出前轉譯你的 ES6 程式碼程 ES5…並且 <a href="https://twitter.com/linclark" target="_blank" rel="external">Lin</a> 下星期將會在 <a href="http://jquerysf.com/" target="_blank" rel="external">jQuerySF</a> 談到這個。</p>
+<h2 id="為何我們贊助_jsconf_的直播轉錄">為何我們贊助 jsconf 的直播轉錄</h2><p><a href="https://twitter.com/izs" target="_blank" rel="external">Isaac</a> 解釋<a href="http://blog.npmjs.org/post/120056493625/sponsoring-captioning-at-jsconf-2015" target="_blank" rel="external">為何 npm 看重會議的直播轉錄</a>和為何我們在今年的 JSConf 贊助它。</p>
+<h2 id="大量湧入的人們">大量湧入的人們</h2><p>許多的人…</p>
+<p>幾個星期前，<a href="https://twitter.com/maybekatz" target="_blank" rel="external">Kat Marchán</a> 加入了 CLI 團隊。Kat 不只擁有開發工具的經驗，也有許多使用前端建置系統的經驗，讓我們非常興奮的開始摩拳擦掌迎接紮實的前端支援。</p>
+<p>然後 <a href="https://twitter.com/imshivs" target="_blank" rel="external">Shivani Negi</a> 成為我們的暑期實習生。她開始熟悉 npm 程式碼庫來看她想要專注在哪裡。</p>
+<p>全端開發者 <a href="https://twitter.com/jefflembeck" target="_blank" rel="external">Jeff Lembeck</a> 加入了 WWW 團隊。他將會幫助我們更容易使用網站去發現正確的套件。</p>
+<p>作為行銷副總裁，<a href="https://twitter.com/kaseybyrne" target="_blank" rel="external">Kasey Byrne</a> 正在負責產品的行銷工作，例如：<a href="https://www.npmjs.com/private-modules" target="_blank" rel="external">npm 私有模組</a>和 <a href="https://www.npmjs.com/enterprise" target="_blank" rel="external">npm Enterprise</a>。</p>
+<p><a href="https://twitter.com/EmilyUna65" target="_blank" rel="external">Emily Ross-Brown</a> 加入作為我們第一個 C-team 的特別助理並幫助讓執行更有效率。</p>
+<p><a href="https://twitter.com/StephSnopek" target="_blank" rel="external">Stephanie Snopek</a> 加入支援團隊來幫助你解決任何你寄去 <a href="support@npmjs.com">support@npmjs.com</a> 或 <a href="https://twitter.com/npm_support" target="_blank" rel="external">@npm_support</a> 的問題。</p>
+<p>此外，還有一個額外的人下星期將會加入。</p>
+<h2 id="設計師們，你想成為一個_npm_人嗎？">設計師們，你想成為一個 npm 人嗎？</h2><p>我們正在尋找一個 UX/UI 設計師來幫助我們設計一些精實且有挑戰性的功能。<a href="https://www.npmjs.com/jobs#ux-ui-designer" target="_blank" rel="external">會是你嗎？</a></p>
+<p>##來自 nodeconf 的 便利模組清單</p>
+<p>上星期是 NodeConf。許多有用的東西傳了出來，但其中一個我們想要分享的是 這個<a href="https://gist.github.com/beaugunderson/97e5e03fff14da8073dc" target="_blank" rel="external">酷模組的清單</a>。我們特別喜歡<a href="https://gist.github.com/beaugunderson/97e5e03fff14da8073dc#from-participatory-modules-session" target="_blank" rel="external">參與模組部分</a>，包括可以讓你的模組更好的模組。感謝 <a href="https://twitter.com/beaugunderson" target="_blank" rel="external">Beau Gunderson</a> 分享他的筆記。</p>
+<p>原文：<a href="http://blog.npmjs.org/post/121795139990/npm-weekly-19-npm-is-massive-new-lifecycle" target="_blank" rel="external">npm Weekly, #19</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/06/24/npm-weekly-19/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/06/24/npm-weekly-19/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/06/24/npm-weekly-19/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <a class="newer-posts" href="/2015/06/26/npm-weekly-20/">
+        ← npm 週報 #20 npm 3 來了!
+    </a>
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/05/31/npm-weekly-18/">
+        npm 週報 #18 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>

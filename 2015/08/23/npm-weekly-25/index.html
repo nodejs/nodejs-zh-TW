@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>npm 週報 #24 : dist-tag, talking to Microsoft, semicolon trolling | iojs 台灣</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="iojs 台灣">
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/atom.xml">
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  
+<header class="site-head"  style="background-image: url(http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png)" >
+  <a href="https://github.com/iojs/iojs-tw" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">iojs 台灣</h1>
+            <h2 class="blog-description"></h2>
+        </div>
+    </div>
+</header>
+
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2015-08-23T09:38:32.000Z" itemprop="datePublished">
+          2015-08-23
+      </time>
+    
+</span>
+    <h1 class="post-title">npm 週報 #24 : dist-tag, talking to Microsoft, semicolon trolling</h1>
+    <section class="post-content">
+      <p><a href="https://www.npmjs.com/npm-weekly?utm_campaign=newsletter20150820" title="訂閱週報" target="_blank" rel="external">加入週報</a>將會寄送這個給你！</p>
+<p><a href="https://docs.npmjs.com/cli/dist-tag?utm_campaign=newsletter20150820" title="dist-tag | npm 文件" target="_blank" rel="external"><img src="https://partners.npmjs.com/weekly/rio-luggage-tag.jpg" alt="npm te ama" title="npm te ama"></a></p>
+<h2 id="話說散佈標籤">話說散佈標籤</h2><p>你或許已經知道安裝 <code>npm@latest</code> 會取得 npm 2.13.5 或者安裝 <code>npm@beta</code> 會取得 npm 3.3.0。<code>latest</code> 及 <code>beta</code> 這些標籤是很棒的 <strong>散佈標籤</strong> 示範。</p>
+<p>標籤開啟了多個開發流（streams）— 試想 “穩定” 及 “金絲雀（canary）” - 為了能夠在被使用者廣泛地採用之前進行測試，並且讓使用者測試新功能或試試看你的模組是否正常運作。（把 <code>latest</code> 視為”我們希望大多數使用者所使用的最新版本“，而非單純的”最新版“）</p>
+<p>新增、修改或列舉散步標籤請使用 <a href="https://docs.npmjs.com/cli/dist-tag?utm_campaign=newsletter20150820" title="dist-tag | npm 文件" target="_blank" rel="external">dist-tag</a>.</p>
+<p>(Also on the subject of versions: if you missed it, check out <a href="http://blog.npmjs.org/post/126588929320/npm-weekly-24-semver-explained-amazing-videos?utm_campaign=newsletter20150820" title="npm weekly #24: semver explained, amazing videos, pizza" target="_blank" rel="external">last week’s explainer on semantic versioning</a>.)</p>
+<p>（以及有關版號主題：如果你錯過了，請見<a href="http://blog.npmjs.org/post/126588929320/npm-weekly-24-semver-explained-amazing-videos?utm_campaign=newsletter20150820" title="npm 週報 #24: semver 說明、驚艷影片、比薩" target="_blank" rel="external">上週的語意版號解釋一文</a>）</p>
+<h2 id="提升_Windows_開發體驗">提升 Windows 開發體驗</h2><p>使用 npm registry 的開發者中，超過 40% 的開發者使用 Windows - 這數字已保持將近一年，現在逐月的成長中 - 所以任何提升 Windows 平台的 Node 開發程序有重大影響。</p>
+<p>好消息是我們與 <a href="https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio" title="Node.js Tools for Visual Studio | Seth Juarez | Channel 9" target="_blank" rel="external">Microsoft’s Visual Studio  團隊</a>有每月 check-in，以保持溝通暢通並且讓事情做得更棒。同樣的好消息是你也可以協助。你是否也在 Windows 平台上進行開發呢？什麼可以運作？什麼不行？或者你有個希望清單？讓我們知道：<a href="https://twitter.com/intent/follow?screen_name=npmjs" title="npmbot (@npmjs) | Twitter" target="_blank" rel="external">tweet</a> 或 <a href="mailto:wombat-cowp@npmjs.com" target="_blank" rel="external">email</a> 或任何其他經常聯絡的到我們的管道皆可。</p>
+<h2 id="測試_npm_組織">測試 npm 組織</h2><p>我們收到真實狂熱粉絲的信件，有關我們即將推出的 <strong>組織（Orgs）</strong> 支援，我們希望你也會喜歡。想要在正式推出前試試嗎？<a href="http://info.npmjs.com/test-orgs?utm_campaign=newsletter20150820" title="幫助我們測試 npm 組織" target="_blank" rel="external">按此加入 beta 測試</a>。</p>
+<h2 id="協助_Nick_可用性測試">協助 Nick 可用性測試</h2><p>我們仍在持續徵求自願者參與一個 <a href="https://calendly.com/npm/ux" title="Calendly - Nick Cawthon" target="_blank" rel="external">30 分鐘可用性會期</a>，為了形成接下來對模組探索、registry頁面以及npm管理功能的提升。這是一個機會可以影響一個工具，這個工具過去一個月被單獨使用超過20億次，另外也請給 <a href="http://shop.npmjs.com?utm_campaign=newsletter20150820" title="npm swag store" target="_blank" rel="external">neat swag</a> 評分。你可以幫忙嗎？</p>
+<h2 id="歡迎另一位新人">歡迎另一位新人</h2><p>來自 Loggly 的 <a href="http://twitter.com/siliconvallygrl" title="SiliconVallyGrl (@SiliconVallyGrl) | Twitter" target="_blank" rel="external">Angela Eichner</a> 在這週加入我們，協助 npm 成為科技、財務及商業界中名號最響亮的名字。如果你也想要協助 npm 成為更大的團隊、有意的自主持有 npm registry 或談論客製解決方案，請<a href="mailto:angela@npmjs.com" target="_blank" rel="external">與我們聯絡</a>。</p>
+<h2 id="讓週報更好">讓週報更好</h2><p>你正在做什麼？誰正在做些啟發世人的事？哪些專案需要幫忙？</p>
+<p>告訴我們你對週報有什麼建議。直接回覆這封信件告訴我們你的想法。</p>
+<h2 id="講授論點：standard">講授論點：standard</h2><p><a href="https://www.npmjs.com/package/standard?utm_campaign=newsletter20150820" title="standard" target="_blank" rel="external">standard</a> 是一個模組，用來強迫專案有一致的 JavaScript 風格。</p>
+<p><a href="https://www.npmjs.com/package/semicolons?utm_campaign=newsletter20150820" title="semicolon" target="_blank" rel="external">semicolons</a> 要求分號並且丟出例外，如果每一行結尾沒有分號。</p>
+<p>我們絕對不建議一次使用上述兩個風格。</p>
+<h4 id="贊助">贊助</h4><h2 id="獲得_Node_工作">獲得 Node 工作</h2><p><a href="http://hired.com/?utm_source=npmjs&amp;utm_medium=newsletter" title="Hired - Marketplace for Recruiting Startup &amp; Tech Talent" target="_blank" rel="external">Hired</a> 連接超過 2,500 個審查過的科技企業，13 個主要科技樞紐的 Node 開發者，可能也包含你的科技樞紐。Hired 的開發者平均一週內收到 5 個面試邀請。正在找工作？<a href="http://hired.com/?utm_source=npmjs&amp;utm_medium=newsletter" title="Hired - Marketplace for Recruiting Startup &amp; Tech Talent" target="_blank" rel="external">試試 Hired</a>.</p>
+<p>原文：<a href="http://blog.npmjs.org/post/127157174356/npm-weekly-25-dist-tag-talking-to-microsoft" target="_blank" rel="external">npm weekly, #25</a>，作者：<a href="http://blog.npmjs.org/" target="_blank" rel="external">@npm</a>，翻譯 <a href="https://github.com/iojs/iojs-tw" target="_blank" rel="external">@iojs-tw</a>，授權 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW" target="_blank" rel="external">CC-BY 4.0</a></p>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>iojs 台灣</h4>
+    <p>iojs 台灣繁體中文翻譯小組</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://tw.iojs.org/2015/08/23/npm-weekly-25/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://tw.iojs.org/2015/08/23/npm-weekly-25/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://tw.iojs.org/2015/08/23/npm-weekly-25/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2015/07/21/npm-weekly-22/">
+        npm 週報 #22 : 年度的改變遊戲規則者 →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">留言</a></h1>
+
+    
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+</div>
+
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <a class="subscribe icon-feed" href="/atom.xml"><span class="tooltip">Subscribe!</span></a>
+  
+  <div class="inner">
+     <section class="copyright">所有內容皆為 <a href="/">iojs 台灣</a> &copy; 2015 &bull; 版權所有</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'iojs-tw';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>
