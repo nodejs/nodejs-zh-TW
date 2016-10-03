@@ -22,6 +22,8 @@ before_install:
 
 script:
   - hexo gm
+
+after_success:
   - hexo deploy
 
 branches:
