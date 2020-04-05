@@ -68,7 +68,7 @@ theme: casper
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:iojs/iojs-tw.git
+  repo: git@github.com:nodejs/iojs-tw.git
   branch: gh-pages
 
 feed:
