@@ -26,7 +26,7 @@ io.js 團隊大部分的成員來自於原本 [Node.js 核心團隊](https://git
 
 ### io.js 新特徵
 
-首先 io.js 採用正確的[版本語意 (sermver)](http://semver.org/) ，從 1.0.0 開始，這就是最大跟 Node.js 的不同。
+首先 io.js 採用正確的[版本語意 (semver)](http://semver.org/) ，從 1.0.0 開始，這就是最大跟 Node.js 的不同。
 
 [jQuery blog](http://blog.jquery.com/2014/10/29/jquery-3-0-the-next-generations/) 對於這個部分發表了為什麼版本語意的重要性。
 
