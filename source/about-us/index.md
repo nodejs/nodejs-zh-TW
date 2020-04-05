@@ -1,8 +1,8 @@
-# iojs-tw
+title: "關於我們"
+date: 2015-02-14 18:18:29
+---
 
-[![Build Status](https://travis-ci.org/iojs/iojs-tw.svg?branch=master)](https://travis-ci.org/iojs/iojs-tw) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iojs/iojs-tw?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[台灣官方網站](http://tw.iojs.org/)
+部落格程式碼及文章皆放自 [iojs-tw Github Repository](https://github.com/iojs/iojs-tw)。
 
 ## 協作方法
 

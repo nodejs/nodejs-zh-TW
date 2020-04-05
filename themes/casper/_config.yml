@@ -1,0 +1,10 @@
+# config
+cover: http://1.bp.blogspot.com/-zrhW3T2dWms/UoSI5dA6kfI/AAAAAAAAgb0/CXg-d8_JZLY/s1600/1700x630w.png
+logo: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Io.js_logo.png/105px-Io.js_logo.png
+bio: 'iojs 台灣繁體中文翻譯小組'
+
+# Content
+excerpt_link: 繼續閱讀
+
+# Miscellaneous
+rss: atom.xml

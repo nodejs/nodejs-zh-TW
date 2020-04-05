@@ -1,11 +1,11 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  首頁: /
+  文章: /archives
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: 繼續閱讀
 fancybox: true
 
 # Sidebar

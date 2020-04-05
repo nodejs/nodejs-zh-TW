@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: io.js
+title: iojs 台灣
 subtitle:
 description:
-author: John Doe
+author: iojs 台灣
 language: zh-TW
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://iojs.nodejs.tw
+url: http://tw.iojs.org
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -51,8 +51,8 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: MMM D YYYY
-time_format: H:mm:ss
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -62,11 +62,18 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: casper
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/iojs/iojs-tw.git
+  repo: git@github.com:iojs/iojs-tw.git
   branch: gh-pages
+
+feed:
+  type: atom
+  path: /atom.xml
+  limit: 20
+
+disqus_shortname: iojs-tw
